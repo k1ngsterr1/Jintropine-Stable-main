@@ -1,0 +1,183 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+    body
+
+        .video-screen
+            width: 100%
+            height: auto
+            display: flex
+            margin: auto
+            background-color: #0B357A
+            flex-direction: column
+
+            .video-screen-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+                justify-content: space-between
+
+                .video-screen-heading-container
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+
+                    .v-screen-heading, .kz-v-screen-heading
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(19px, 1.9791666666666667vw,76px)
+                        text-transform: uppercase
+                        color: #FFF200
+
+                    .kz-v-screen-heading
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(24px,2.5vw,96px)
+
+                    .separator
+                        width: clamp(174.5px,18.177083333333332vw,698px)
+                        height: 1px
+                        margin-top: $sixteenclamp
+                        background-color: #FFF200
+
+                .video-content
+                    width: 100%
+                    display: flex
+                    justify-content: center
+                    margin-top: clamp( 50px,5.208333333333333vw,200px)
+                    margin-bottom: clamp( 50px,5.208333333333333vw,200px)
+
+                    .youtube-video
+                        width: clamp(396px,41.25vw,1584px)
+                        height: clamp(261.5px,27.239583333333332vw,1046px)
+                        border-radius: 10px
+
+                    .video-description
+                        width: clamp(216px,22.5vw,864px)
+                        height: clamp(261.5px,27.239583333333332vw,1046px)
+                        background: #FFF200
+                        border-radius: 13px
+                        margin-left: $thirtytwoclamp
+
+                        .v-description-h, .kz-v-description-h
+                            width: auto
+                            font-size: clamp(14.5px,1.5104166666666667vw,58px)
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 700
+                            margin-top: $thirtytwoclamp
+                            margin-left: $thirtytwoclamp
+                            color: #022B6B
+
+                        .kz-v-description-h
+                            font-family: 'Roboto Condensed'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: clamp(17px,1.7708333333333333vw,68px)
+
+                        .v-description-p, .kz-v-description-p
+                            width: clamp(175px,18.229166666666668vw,700px)
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 300
+                            font-size: clamp(12px,1.25vw,48px)
+                            margin-left: $thirtytwoclamp
+                            margin-top: $sixteenclamp
+                            color: #1e1e1e
+
+                        .kz-v-description-p
+                            font-family: 'Raleway'
+                            font-style: normal
+                            font-weight: 500
+
+@media screen  and (max-width: 448px)
+
+    .video-screen
+        width: 100%
+        height: auto
+        display: flex
+        margin: auto
+        background-color: #F4F5F8
+        flex-direction: column
+
+        .video-screen-container
+            width: 86.45833333333333%
+            height: auto
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: auto
+            margin-top: clamp( 50px,5.208333333333333vw,200px)
+            justify-content: space-between
+
+            .video-screen-heading-container
+                width: 100%
+                margin-top: $sixtyfourclamp
+                display: flex !important
+                align-items: center !important
+                flex-direction: column !important
+
+                .v-screen-heading, .kz-v-screen-heading
+                    font-size: clamp(14.5px,6.775700934579439vw,58px) !important
+                    text-transform: uppercase !important
+                    text-align: center !important
+
+            .video-content
+                display: flex !important
+                flex-direction: column !important
+                align-items: center !important
+
+                .video-description
+                    width: 105% !important
+                    margin: auto !important
+                    margin-left: 0px !important
+                    margin-right: 0px !important
+                    text-align: center !important
+                    margin-top: clamp(16px,8.205128205128204vw,64px) !important
+
+                    .v-description-h, .kz-v-description-h
+                        width: auto !important
+                        font-size: clamp(11px,5.641025641025641vw,44px) !important
+                        margin-left: 0 !important
+
+                    .v-description-p, .kz-v-description-p
+                        width: clamp(150px,76.92307692307692vw,600px) !important
+                        font-size: clamp(9px,4.205607476635514vw,36px) !important
+                        margin-left: 0 !important
+                        margin-right: 0 !important
+                        margin: auto !important
+                        margin-top: clamp(8px,0.8333333333333334vw,32px) !important
+
+                .youtube-video
+                    width: clamp(175px,89.74358974358974vw,700px) !important

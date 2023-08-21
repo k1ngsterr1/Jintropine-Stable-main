@@ -1,0 +1,235 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+
+    body
+        overflow-x: hidden !important
+
+        .nav-container
+            width: 100%
+            height: auto
+            display: flex
+            justify-content: center
+            margin-top: $sixtyfourclamp
+
+            .nav
+                width: 86.45833333333333%
+                height: auto
+                margin: auto
+                display: flex
+                justify-content: space-between
+                align-items: center
+
+                .whats-app-link, .phone-number, .email, .form-button
+                    text-decoration: none
+                    font-size: clamp(10.5px,1.09375vw,42px)
+                    font-weight: 600
+                    color: #FFF200
+
+                .whats-app-link
+                    display: flex
+                    align-items: center
+                    justify-content: center
+
+                    .whats-app-icon
+                        margin-right: $eightclamp
+                        font-size: clamp(12px,1.25vw,48px)
+
+                .form-button
+                    width: clamp(135px,14.0625vw,540px)
+                    height: $sixtyfourclamp
+                    display: flex
+                    align-items: center
+                    font-weight: 800
+                    border-radius: 100px
+                    justify-content: center
+                    background-color: #FFF200
+                    color: #00346E
+                    cursor: pointer
+                    transition: 0.3s all
+
+                .logo
+                    width: clamp(119px,12.395833333333334vw,476px)
+                    height: clamp(20.5px,2.1354166666666665vw,82px)
+
+                .navigation
+                    display: flex
+                    align-items: center
+
+                    .link-main, .link-verification
+                        font-family: 'Raleway'
+                        font-style: normal
+                        font-weight: 800
+                        font-size: clamp(9px,0.9375vw,36px)
+                        color: $main_blue
+                        text-decoration: none
+                        &:hover
+                            color: $selected_blue
+
+                    .link-verification
+                        margin-right: $thirtytwoclamp
+
+                    .link-main
+                        margin-right: $thirtytwoclamp
+
+                    .contact-button
+                        width: clamp(135px,14.0625vw,540px)
+                        height: clamp(24.5px,2.5520833333333335vw,98px)
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 500
+                        color: $background
+                        background-color: $red
+                        cursor: pointer
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        border-radius: 71px
+                        font-size: clamp(12.5px,1.3020833333333333vw,50px)
+                        border: none
+                        transition: 0.3s all
+                        &:hover
+                            background-color: $button_hover
+
+                    .languages-container
+                        font-style: normal
+                        font-weight: 500
+                        cursor: pointer
+                        font-size: clamp(9px,0.9375vw,36px)
+                        color: $main_blue
+                        margin: 0
+                        margin-right: $thirtytwoclamp
+                        background: transparent
+                        display: flex
+                        &:hover
+                            color: $selected_blue
+
+                        .arrow-down
+                            margin-left: $eightclamp
+
+                        .fi-ru, .fi-us, .fi-kz
+                            transition: 0.3s all
+                            &:hover
+                                border: 2px solid $main_blue
+
+                        .fi-ru, .fi-us
+                            margin-right: clamp(6px,0.625vw,24px)
+            .nav-mob
+                display: none
+
+                .for-burger-menu
+                    display: none
+
+@media screen  and (max-width: 448px)
+
+    *
+
+    body
+
+        .nav-container
+            width: 100%
+            height: auto
+            display: flex
+            justify-content: center
+
+            .nav
+                width: 86.45833333333333%
+                height: auto
+                margin: auto
+                display: none !important
+                justify-content: space-between
+                align-items: center
+
+            .nav-mob
+                width: 85.51401869158879%
+                display: flex
+                justify-content: space-between
+                align-items: center
+
+                .mobile-logo
+                    width: auto
+                    height: auto
+
+                .for-burger-menu
+                    display: flex
+                    flex-direction: column
+
+                    .bars
+                        font-size: clamp(20px,9.345794392523365vw,80px)
+                        cursor: pointer
+                        color: #FFF200
+
+                    .cross-icon
+                        font-size: clamp(20px,9.345794392523365vw,80px)
+                        cursor: pointer
+                        color: #FFF200
+
+                    .nav-links-mobile
+                        width: 100% !important
+                        height: auto !important
+                        background-color: #022B6B !important
+                        top: clamp(34.5px,16.121495327102803vw,138px)
+                        box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.1) !important
+                        display: flex !important
+                        z-index: 10 !important
+                        flex-direction: column !important
+                        margin-left: auto !important
+                        margin-right: auto !important
+                        left: 0 !important
+                        right: 0 !important
+                        top: 90px !important
+                        text-align: center !important
+                        position: absolute !important
+
+                        .main-link-mobile, .verification-mobile-link, .contact-with-us-mob, .indication-mob, .available-mob, .document-mob, .realisation-conditions-mob
+                            font-size: clamp(10px,4.672897196261682vw,40px)
+                            color: #FFF200
+                            text-decoration: none
+
+                        .indication-mob
+                            margin-top: clamp(14.5px,6.775700934579439vw,58px) !important
+
+                        .available-mob, .document-mob, .realisation-conditions-mob
+                            margin-top: clamp(14.5px,6.775700934579439vw,58px) !important
+
+                        .main-link-mobile
+                            margin-top: clamp(14.5px,6.775700934579439vw,58px) !important
+
+                        .verification-mobile-link
+                            margin-top: clamp(14.5px,6.775700934579439vw,58px) !important
+
+                        .contact-with-us-mob
+                            margin-top: clamp(14.5px,6.775700934579439vw,58px) !important
+                            margin-bottom: clamp(14.5px,6.775700934579439vw,58px) !important
+
+                        .language-buttons
+                            margin-bottom: clamp(14.5px,6.775700934579439vw,58px) !important
+
+                            .fi-ru, .fi-kz, .fi-us
+                                font-size: clamp(12.5px,5.841121495327103vw,50px)
+
+                            .fi-kz
+                                margin-left: $thirtytwoclamp
+
+                            .fi-ru
+                                margin-right: $thirtytwoclamp

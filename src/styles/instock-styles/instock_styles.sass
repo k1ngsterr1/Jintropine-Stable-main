@@ -1,0 +1,356 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #EADF02
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+    body
+
+        .in-stock-screen
+            width: 100%
+            height: auto
+            display: flex
+            margin: auto
+            background-color: #022B6B
+            flex-direction: column
+
+            .deco-picture
+                position: absolute
+                width: clamp(341.62px,35.58541666666667vw,1366.48px)
+                height: clamp(340.37px,35.45520833333333vw,1361.48px)
+                left: clamp(0.365px,0.03802083333333333vw,1.46px)
+                top: clamp(2998px,312.2916666666667vw, 11992px)
+                z-index: 0
+
+            .arrow
+                display: none !important
+
+            .in-stock-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+                justify-content: space-between
+
+                .instock-p-container
+                    display: flex
+                    align-items: flex-end
+                    flex-direction: column
+
+                    .main-button, .kz-main-button
+                        width: clamp(203.5px,21.197916666666668vw,814px)
+                        height: $sixtyfourclamp
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(11px,1.1458333333333333vw,44px)
+                        text-decoration: none !important
+                        background-color: #FCEE03
+                        display: flex
+                        align-items: center
+                        border-radius: 52px
+                        justify-content: center
+                        border: none
+                        color: #022B6B
+                        margin-top: clamp(22px,2.2916666666666665vw,88px)
+                        &:hover
+                            background-color: $button_hover
+
+                    .kz-main-button
+                        font-family: 'Roboto Condensed' !important
+                        font-style: normal !important
+                        font-weight: 700 !important
+                        // font-size: clamp(13px,1.3541666666666667vw,42px) !important
+
+                    .jintropine-paragraph, .kz-jintropine-paragraph
+                        width: clamp(420px,43.75vw,1680px)
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 300
+                        font-size: clamp(11.5px,1.1979166666666667vw,46px)
+                        line-height: 152%
+                        text-align: right
+                        color: white
+
+                    .kz-jintropine-paragraph
+                        font-family: 'Raleway'
+                        font-style: normal
+                        font-weight: 400
+
+                .in-stock-heading-container
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+
+                    .in-stock-heading, .kz-in-stock-heading
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(19px, 1.9791666666666667vw,76px)
+                        text-transform: uppercase
+                        color: #FFF200
+
+                    .kz-in-stock-heading
+                        font-family: 'Roboto Condensed' !important
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(24px,2.5vw,96px)
+
+                    .separator
+                        width: clamp(174.5px,18.177083333333332vw,698px)
+                        height: 1px
+                        margin-top: $sixteenclamp
+                        background-color: #FFF200
+
+                .in-stock-content
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    margin-top: clamp( 50px,5.208333333333333vw,200px)
+                    margin-bottom: clamp( 50px,5.208333333333333vw,200px)
+
+                    .jintropine-card
+                        width: clamp(210px,21.875vw,840px)
+                        height: auto
+                        background: #033585
+                        border-radius: 15px
+                        display: flex
+                        z-index: 10
+                        flex-direction: column
+                        align-items: center
+
+                        .jintropine-image
+                            width: clamp(200px,20.833333333333332vw,800px)
+                            height: clamp(200px,20.833333333333332vw,820px)
+                            display: flex
+                            margin-left: clamp(10px,1.0416666666666667vw,40px)
+                            margin-top: clamp(7.5px,0.78125vw,30px)
+                            border-radius: 10px
+
+                        .card-content-jin
+                            margin-left: clamp(7.5px,0.78125vw,30px)
+                            display: flex
+                            align-items: center
+                            flex-direction: column
+                            margin-bottom: clamp(25px,2.6041666666666665vw,100px)
+
+                            .growth-hormone, .kz-growth-hormone
+                                font-family: 'Unbounded'
+                                font-style: normal
+                                font-weight: 300
+                                font-size: clamp(9px,0.9375vw,36px)
+                                margin-top: clamp(10.5px,1.09375vw,42px)
+                                color: rgba(245, 248, 255, 0.6)
+
+                            .kz-growth-hormone
+                                font-family: 'Raleway'
+                                font-style: normal
+                                font-weight: 500
+
+                            .card-heading, .kz-card-heading
+                                text-align: center
+                                font-family: 'Unbounded'
+                                font-style: normal
+                                font-weight: 500
+                                font-size: clamp(11px,1.1458333333333333vw,44px)
+                                line-height: 138.4%
+                                text-transform: capitalize
+                                margin-top: $eightclamp
+                                color: #FFF200
+
+                            .kz-card-heading
+                                font-family: 'Roboto Condensed'
+                                font-style: normal
+                                font-weight: 500
+                                font-size: clamp(14px,1.4583333333333333vw,56px)
+
+                            .p-description, .kz-p-description
+                                width: clamp(177.5px,18.489583333333332vw,710px)
+                                font-family: 'Unbounded'
+                                font-style: normal
+                                text-align: center
+                                font-weight: 300
+                                line-height: 152%
+                                font-size: clamp(7.5px,0.78125vw,30px)
+                                color: #FFFFFF
+                                margin-top: $sixteenclamp
+
+                            .kz-p-description
+                                font-family: 'Raleway'
+                                font-style: normal
+                                font-weight: 500
+                                font-size: clamp(8px,0.8333333333333334vw,32px)
+
+                            .in-stock
+                                font-family: 'Raleway'
+                                font-style: normal
+                                font-weight: 500
+                                font-size: clamp(9px,0.9375vw,36px)
+                                color: #FCEE03
+                                margin-top: $sixteenclamp
+
+                            .price
+                                font-family: 'Roboto Condensed'
+                                font-style: normal
+                                font-weight: 700
+                                font-size: clamp(16.5px,1.71875vw,66px)
+                                color: #FCEE03
+                                margin: auto
+                                margin-top: $thirtytwoclamp
+
+                            .stock-button
+                                width: clamp(170.74px,17.785416666666666vw,682.96px)
+                                height: clamp(27.365px,2.8505208333333334vw,109.46px)
+                                background-color: #FCEE03
+                                display: flex
+                                align-items: center
+                                text-decoration: none !important
+                                justify-content: center
+                                font-family: 'Unbounded'
+                                font-style: normal
+                                font-weight: 600
+                                font-size: clamp(11px,1.1458333333333333vw,44px)
+                                color: #022B6B
+                                margin: auto
+                                margin-top: $sixteenclamp
+                                border-radius: 50px
+                                &:hover
+                                    background-color: #EADF02
+
+@media screen  and (max-width: 448px)
+
+    .in-stock-screen
+        width: 100%
+        height: auto
+        display: flex
+        margin: auto
+        background-color: #F4F5F8
+        flex-direction: column
+
+        .deco-picture
+            display: none !important
+
+        .arrow
+            display: none !important
+
+        .in-stock-container
+            width: 86.45833333333333%
+            height: auto
+            display: flex !important
+            flex-direction: column !important
+            justify-content: center !important
+            align-items: center !important
+            margin: auto
+            margin-top: clamp( 50px,5.208333333333333vw,200px)
+            justify-content: space-between
+            margin-top: clamp( 50px,5.208333333333333vw,200px)
+            margin-bottom: clamp( 50px,5.208333333333333vw,200px)
+
+            .instock-p-container
+                display: flex !important
+                align-items: center !important
+
+                .main-button, .kz-main-button
+                    width: clamp(178.5px,83.41121495327103vw,714px) !important
+                    font-size: clamp(10.5px,4.906542056074766vw,42px) !important
+                    height: clamp(34px,15.88785046728972vw,136px) !important
+                    margin-left: 0px !important
+                    margin-right: 0px !important
+
+                .kz-main-button
+                    font-size: 25px !important
+
+            .in-stock-heading-container
+                width: 100%
+                margin-top: $sixtyfourclamp
+                display: flex !important
+                align-items: center !important
+                flex-direction: column !important
+
+                .in-stock-heading, .kz-in-stock-heading
+                    font-family: 'Unbounded' !important
+                    font-style: normal !important
+                    color: #FFF200 !important
+                    font-weight: 700 !important
+                    font-size: clamp(17px,7.94392523364486vw,68px) !important
+                    text-transform: uppercase !important
+                    text-align: center !important
+
+            .in-stock-content
+                display: flex !important
+                flex-direction: column !important
+                align-items: center !important
+
+                .jintropine-card
+                    width: clamp(170px,87.17948717948718vw,680px) !important
+                    height: auto !important
+                    display: flex !important
+                    align-items: center !important
+                    text-align: center !important
+
+                    .jintropine-image
+                        width: clamp(110px,51.401869158878505vw,440px) !important
+                        height: clamp(100px,46.728971962616825vw,400px) !important
+                        margin: auto
+                        margin-right: 0 !important
+                        margin-left: 0 !important
+                        margin-top: 0 !important
+                        margin-top: clamp(4px,2.051282051282051vw,16px) !important
+                        margin-bottom: 0 !important
+
+                    .card-content-jin
+                        margin-top: 0px !important
+
+                        .growth-hormone, .kz-growth-hormone
+                            font-size: clamp(6px,3.076923076923077vw,24px) !important
+
+                        .card-heading, .kz-card-heading
+                            font-size: clamp(11px,5.641025641025641vw,44px) !important
+
+                        .p-description, .kz-p-description
+                            width: clamp(150px,70.09345794392523vw,600px) !important
+                            font-size: clamp(7px,3.58974358974359vw,28px) !important
+
+                        .in-stock, .kz-in-stock
+                            font-size: clamp(8px,4.102564102564102vw,32px) !important
+                            margin-top: clamp(8px,4.102564102564102vw,32px) !important
+
+                        .price
+                            font-size: clamp(13px,6.666666666666667vw,52px) !important
+
+                        .stock-button
+                            width: 80% !important
+                            height: clamp(20px,10.256410256410257vw,80px) !important
+                            margin-top: clamp(8px,4.102564102564102vw,32px) !important
+                            font-size: clamp(8.5px,4.358974358974359vw,34px) !important
+
+                .jintropine-paragraph, .kz-jintropine-paragraph
+                    width: clamp(170px,87.17948717948718vw,680px) !important
+                    text-align: center !important
+                    margin-top: clamp(16px,8.205128205128204vw,64px) !important
+                    font-size: clamp(8.25px,4.230769230769231vw,33px) !important
+                    line-height: 138% !important

@@ -1,0 +1,371 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+    body
+        width: 100%
+        height: auto
+        font-family: 'Raleway', sans-serif
+        font-display: fallback
+        overflow-x: hidden !important
+
+        .composition-screen
+            width: 100%
+            height: auto
+            display: flex
+            margin: auto
+            background-color: #022B6B
+            flex-direction: column
+
+            .composition-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+                justify-content: space-between
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+                margin-bottom: clamp( 50px,5.208333333333333vw,200px)
+
+                .heading-container
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+
+                    .composition-heading, .kz-composition-heading
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(19px, 1.9791666666666667vw,76px)
+                        text-transform: uppercase
+                        color: #FFF200
+
+                    .kz-composition-heading
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(24px,2.5vw,96px)
+
+                    .separator
+                        width: clamp(174.5px,18.177083333333332vw,698px)
+                        height: 1px
+                        margin-top: $sixteenclamp
+                        background-color: #FFF200
+
+                .composition-card-container
+                    display: flex
+                    flex-direction: column
+                    width: clamp(653px,68.02083333333333vw,2612px)
+                    margin-top: clamp( 50px,5.208333333333333vw,200px)
+
+                    .column-one, .column-two
+                        width: 100%
+                        display: flex
+                        justify-content: space-between
+
+                        .composition-card-content
+                            display: flex
+                            border: 2px solid red
+                            width: clamp(304px,31.666666666666668vw,1216px)
+                            height: clamp(96.5px,10.052083333333334vw,386px)
+                            flex-direction: column
+                            background: #022B6B
+                            border: 2px solid #0340A1
+                            border-radius: 15px
+
+                            .card-heading-container
+                                display: flex
+                                align-items: center
+                                margin-left: clamp(12.5px,1.3020833333333333vw,50px)
+                                margin-top: clamp(10px,1.0416666666666667vw,40px)
+
+                                .card-icon
+                                    width: clamp(2.5px,0.2604166666666667vw,10px)
+                                    height: clamp(17px,1.7708333333333333vw,68px)
+
+                                .card-composition-header, .kz-card-composition-header
+                                    font-family: 'Unbounded'
+                                    font-style: normal
+                                    font-weight: 400
+                                    font-size: clamp(13.5px,1.40625vw,54px)
+                                    color: #FCEE03
+                                    margin-left: $sixteenclamp
+
+                                .kz-card-composition-header
+                                    font-family: 'Roboto Condensed'
+                                    font-style: italic
+                                    font-weight: 400
+                                    font-size: clamp(16.5px,1.71875vw,66px)
+
+                            .card-composition-paragraph, .kz-card-composition-paragraph
+                                width: clamp(250px,26.041666666666668vw,1000px)
+                                margin-top: clamp(10.5px,1.09375vw,42px)
+                                margin-left: clamp(12.5px,1.3020833333333333vw,50px)
+                                font-family: 'Unbounded'
+                                font-style: normal
+                                font-weight: 300
+                                font-size: clamp(9px,0.9375vw,36px)
+                                line-height: 138.4%
+                                color: white
+
+                            .kz-card-composition-paragraph
+                                font-family: 'Raleway'
+                                font-style: normal
+                                font-weight: 500
+                                font-size: clamp(10.5px,1.09375vw,42px)
+
+                    .column-two
+                        margin-top: clamp(19.5px,2.03125vw,78px)
+
+                    .composition-card-content-l
+                        display: flex
+                        border: 2px solid red
+                        width: 100%
+                        height: clamp(107px,11.145833333333334vw,428px)
+                        flex-direction: column
+                        background-color: #022B6B
+                        border: 2px solid #0340A1
+                        border-radius: 15px
+                        margin-top: clamp(19.5px,2.03125vw,78px)
+
+                        .card-heading-container-l
+                            display: flex
+                            align-items: center
+                            margin-left: clamp(12.5px,1.3020833333333333vw,50px)
+                            margin-top: clamp(10px,1.0416666666666667vw,40px)
+
+                            .card-icon
+                                width: clamp(2.5px,0.2604166666666667vw,10px)
+                                height: clamp(17px,1.7708333333333333vw,68px)
+
+                            .card-composition-header-l, .kz-card-composition-header-l
+                                font-family: 'Unbounded'
+                                font-style: normal
+                                font-weight: 400
+                                font-size: clamp(13.5px,1.40625vw,54px)
+                                color: #FCEE03
+                                margin-left: $sixteenclamp
+
+                            .kz-card-composition-header-l
+                                font-family: 'Roboto Condensed'
+                                font-style: italic
+                                font-weight: 400
+                                font-size: clamp(16.5px,1.71875vw,66px)
+
+                        .card-composition-paragraph-l, .kz-card-composition-paragraph-l
+                            width: clamp(600px,62.5vw,2400px)
+                            margin-top: clamp(10.5px,1.09375vw,42px)
+                            margin-left: clamp(12.5px,1.3020833333333333vw,50px)
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 300
+                            font-size: clamp(9px,0.9375vw,36px)
+                            line-height: 138.4%
+                            color: #F5F8FF
+
+                        .kz-card-composition-paragraph-l
+                            font-family: 'Raleway'
+                            font-style: normal
+                            font-weight: 500
+                            font-size: clamp(10.5px,1.09375vw,42px)
+
+                        .bold-text, .kz-bold-text
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 800
+                            font-size: clamp(10.25px,1.0677083333333333vw,41px)
+                            color: #F5F8FF
+                            line-height: 138.4%
+                            margin-left: clamp(12.5px,1.3020833333333333vw,50px)
+                            margin-top: clamp(10px,1.0416666666666667vw,40px)
+
+                        .kz-bold-text
+                            font-family: 'Roboto Condensed'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: clamp(14px,1.4583333333333333vw,56px)
+
+                    .composition-card-content-l-bl
+                        display: flex
+                        border: 2px solid red
+                        width: 100%
+                        height: clamp(107px,11.145833333333334vw,428px)
+                        flex-direction: column
+                        background: #FCEE03
+                        border: 2px solid rgba(88, 142, 247, 0.1)
+                        border-radius: 15px
+                        margin-top: clamp(19.5px,2.03125vw,78px)
+
+                        .card-heading-container-l-bl
+                            display: flex
+                            align-items: center
+                            margin-left: clamp(12.5px,1.3020833333333333vw,50px)
+                            margin-top: clamp(10px,1.0416666666666667vw,40px)
+
+                            .card-icon
+                                width: clamp(2.5px,0.2604166666666667vw,10px)
+                                height: clamp(17px,1.7708333333333333vw,68px)
+
+                            .card-composition-header-l-bl, .kz-card-composition-header-l-bl
+                                font-family: 'Unbounded'
+                                font-style: normal
+                                font-weight: 400
+                                font-size: clamp(17px,1.7708333333333333vw,68px)
+                                color: #022B6B
+                                margin-left: $sixteenclamp
+
+                            .kz-card-composition-header-l-bl
+                                font-family: 'Roboto Condensed'
+                                font-style: italic
+                                font-weight: 500
+
+                        .card-composition-paragraph-l-bl
+                            width: clamp(600px,62.5vw,2400px)
+                            margin-top: clamp(10.5px,1.09375vw,42px)
+                            margin-left: clamp(12.5px,1.3020833333333333vw,50px)
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 400
+                            font-size: clamp(9px,0.9375vw,36px)
+                            line-height: 138.4%
+                            color: #022B6B
+
+@media screen  and (max-width: 448px)
+
+    .composition-screen
+        width: 100%
+        height: auto
+        display: flex
+        margin: auto
+        background-color: #F4F5F8
+        flex-direction: column
+
+        .composition-container
+            width: 86.45833333333333%
+            height: auto
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            margin: auto
+            margin-top: clamp( 50px,5.208333333333333vw,200px)
+            justify-content: space-between
+            margin-top: clamp( 50px,5.208333333333333vw,200px)
+            margin-bottom: clamp( 50px,5.208333333333333vw,200px)
+
+            .heading-container
+                width: 100%
+                margin-top: $sixtyfourclamp
+                display: flex !important
+                align-items: center !important
+                flex-direction: column !important
+
+                .composition-heading, .kz-composition-heading
+                    font-size: clamp(17px,7.94392523364486vw,68px) !important
+                    text-transform: uppercase !important
+                    text-align: center !important
+
+            .composition-card-container
+                width: auto !important
+                display: flex !important
+                flex-direction: column !important
+                align-items: center !important
+                justify-content: center !important
+
+                .column-one
+                    width: auto !important
+                    display: flex !important
+                    flex-direction: column !important
+                    align-items: center !important
+
+                    .composition-card-content
+                        width: clamp(180px,92.3076923076923vw,720px) !important
+                        height: clamp(60px,28.037383177570092vw,240px) !important
+                        margin-top: clamp(8px,4.102564102564102vw,32px) !important
+
+                        .card-composition-header, .kz-card-composition-header
+                            font-size: clamp(10.1px,5.17948717948718vw,40.4px) !important
+
+                        .card-composition-paragraph, .kz-card-composition-paragraph
+                            width: clamp(175px,81.77570093457943vw,700px) !important
+                            font-size: clamp(6.75px,3.1542056074766354vw,27px) !important
+
+                .column-two
+                    display: flex !important
+                    flex-direction: column !important
+                    align-items: center !important
+
+                    .composition-card-content
+                        width: clamp(180px,92.3076923076923vw,720px) !important
+                        height: clamp(85px,39.7196261682243vw,340px) !important
+                        margin-top: clamp(8px,4.102564102564102vw,32px) !important
+
+                        .card-composition-header, .kz-card-composition-header
+                            font-size: clamp(10.1px,5.17948717948718vw,40.4px) !important
+
+                        .card-composition-paragraph, .kz-card-composition-paragraph
+                            width: clamp(165px,84.61538461538461vw,660px) !important
+                            font-size: clamp(6.5px,3.3333333333333335vw,26px) !important
+
+                .row-one
+                    display: flex !important
+                    flex-direction: column !important
+                    align-items: center !important
+
+                    .composition-card-content-l
+                        width: clamp(180px,92.3076923076923vw,720px) !important
+                        height: clamp(120px,56.074766355140184vw,480px) !important
+                        margin-top: clamp(8px,4.102564102564102vw,32px) !important
+
+                        .card-composition-header-l, .kz-card-composition-header-l
+                            font-size: clamp(10.1px,5.17948717948718vw,40.4px) !important
+
+                        .card-composition-paragraph-l, .kz-card-composition-paragraph-l
+                            width: clamp(165px,84.61538461538461vw,660px) !important
+                            font-size: clamp(6.5px,3.3333333333333335vw,26px) !important
+
+                        .bold-text
+                            margin-top: clamp(8px,3.7383177570093458vw,32px)
+                            font-size: clamp(6.75px,3.1542056074766354vw,27px) !important
+
+                .row-two
+                    display: flex !important
+                    flex-direction: column !important
+                    align-items: center !important
+
+                    .composition-card-content-l-bl
+                        width: clamp(180px,92.3076923076923vw,720px) !important
+                        height: clamp(120px,56.074766355140184vw,480px) !important
+                        margin-top: clamp(8px,4.102564102564102vw,32px) !important
+
+                        .card-composition-header-l-bl, .kz-card-composition-header-l-bl
+                            font-size: clamp(10.1px,5.17948717948718vw,40.4px) !important
+
+                        .card-composition-paragraph-l-bl, .kz-card-composition-paragraph-l-bl
+                            width: clamp(165px,84.61538461538461vw,660px) !important
+                            font-size: clamp(6.5px,3.3333333333333335vw,26px) !important

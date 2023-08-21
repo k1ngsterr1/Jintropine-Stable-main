@@ -1,0 +1,316 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  width: 100%;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  font-display: fallback;
+  overflow-x: hidden !important;
+}
+* body .indication-screen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  background-color: #022B6B;
+  flex-direction: column;
+}
+* body .indication-screen .indication-container {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+  justify-content: space-between;
+}
+* body .indication-screen .indication-container .indication-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body .indication-screen .indication-container .indication-heading-container .indication-heading, * body .indication-screen .indication-container .indication-heading-container .kz-indication-heading {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(19px, 1.9791666667vw, 76px);
+  text-transform: uppercase;
+  color: #FFF200;
+}
+* body .indication-screen .indication-container .indication-heading-container .kz-indication-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 2.5vw, 96px);
+}
+* body .indication-screen .indication-container .indication-heading-container .separator {
+  width: clamp(174.5px, 18.1770833333vw, 698px);
+  height: 1px;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+  background-color: #FFF200;
+}
+* body .indication-screen .indication-container .button-indication {
+  width: clamp(322px, 33.5416666667vw, 1288px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+}
+* body .indication-screen .indication-container .button-indication .protiv-indication-not {
+  width: clamp(153px, 15.9375vw, 612px);
+  height: clamp(24.5px, 2.5520833333vw, 98px);
+  border: 3px solid #FFF200;
+  border-radius: 58px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 600;
+  background: transparent;
+  font-size: clamp(9.5px, 0.9895833333vw, 38px);
+  color: #FFF200;
+}
+* body .indication-screen .indication-container .button-indication .protiv-indication-not:hover {
+  background-color: #EADF02;
+  color: #022B6B;
+  border: none;
+}
+* body .indication-screen .indication-container .button-indication .indication-button-choosen {
+  width: clamp(153px, 15.9375vw, 612px);
+  height: clamp(24.5px, 2.5520833333vw, 98px);
+  border-radius: 58px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(9.5px, 0.9895833333vw, 38px);
+  color: #022B6B;
+  background-color: #FFF200;
+}
+* body .indication-screen .indication-container .button-indication .indication-button-choosen:hover {
+  background-color: #EADF02;
+}
+* body .indication-screen .indication-container .button-indication .indication-button-not {
+  width: clamp(153px, 15.9375vw, 612px);
+  height: clamp(24.5px, 2.5520833333vw, 98px);
+  border: 3px solid #FFF200;
+  border-radius: 58px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 600;
+  background: transparent;
+  font-size: clamp(9.5px, 0.9895833333vw, 38px);
+  color: #FFF200;
+}
+* body .indication-screen .indication-container .button-indication .indication-button-not:hover {
+  background-color: #EADF02;
+  color: #022B6B;
+  border: none;
+}
+* body .indication-screen .indication-container .button-indication .protiv-indication-choosen {
+  width: clamp(153px, 15.9375vw, 612px);
+  height: clamp(24.5px, 2.5520833333vw, 98px);
+  border-radius: 58px;
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(9.5px, 0.9895833333vw, 38px);
+  color: #022B6B;
+  background-color: #FFF200;
+}
+* body .indication-screen .indication-container .button-indication .protiv-indication-choosen:hover {
+  background-color: #EADF02;
+}
+* body .indication-screen .indication-container .cards-indication {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* body .indication-screen .indication-container .cards-indication .card-content {
+  width: clamp(263px, 27.3958333333vw, 1052px);
+  height: clamp(141.805px, 14.7713541667vw, 567.22px);
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #0340A1;
+  border-radius: 15px;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+}
+* body .indication-screen .indication-container .cards-indication .card-content .card-heading-container {
+  display: flex;
+  align-items: center;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  margin-left: clamp(16px, 1.6666666667vw, 64px);
+}
+* body .indication-screen .indication-container .cards-indication .card-content .card-heading-container .card-header, * body .indication-screen .indication-container .cards-indication .card-content .card-heading-container .kz-card-header {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(11px, 1.1458333333vw, 44px);
+  color: #FFF200;
+  margin-left: clamp(4px, 0.4166666667vw, 16px);
+}
+* body .indication-screen .indication-container .cards-indication .card-content .card-heading-container .kz-card-header {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(12.5px, 1.3020833333vw, 50px);
+}
+* body .indication-screen .indication-container .cards-indication .card-content .card-heading-container .icon-check {
+  color: #FFF200;
+  font-size: clamp(14px, 1.4583333333vw, 56px);
+}
+* body .indication-screen .indication-container .cards-indication .card-content .card-paragraph, * body .indication-screen .indication-container .cards-indication .card-content .kz-card-paragraph {
+  width: clamp(225px, 23.4375vw, 900px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  color: white;
+  font-size: clamp(9.5px, 0.9895833333vw, 38px);
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  margin-left: clamp(16px, 1.6666666667vw, 64px);
+  margin-bottom: clamp(16px, 1.6666666667vw, 64px);
+}
+* body .indication-screen .indication-container .cards-indication .card-content .kz-card-paragraph {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+}
+* body .indication-screen .indication-container .medical-indication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: clamp(27.5px, 2.8645833333vw, 110px);
+}
+* body .indication-screen .indication-container .medical-indication .medical-ind-text, * body .indication-screen .indication-container .medical-indication .kz-medical-ind-text {
+  width: clamp(357px, 37.1875vw, 1428px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(11px, 1.1979166667vw, 46px);
+  text-align: center;
+  color: #FFF200;
+}
+* body .indication-screen .indication-container .medical-indication .kz-medical-ind-text {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(13px, 1.3541666667vw, 52px);
+}
+* body .indication-screen .indication-container .medical-indication .medical-ind-link, * body .indication-screen .indication-container .medical-indication .kz-medical-ind-link {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(14px, 1.4583333333vw, 56px);
+  text-align: center;
+  text-decoration-line: underline;
+  color: white;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  margin-bottom: clamp(50px, 5.2083333333vw, 200px);
+}
+* body .indication-screen .indication-container .medical-indication .kz-medical-ind-link {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(14.5px, 1.5104166667vw, 58px);
+}
+
+@media screen and (max-width: 448px) {
+  .indication-screen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    background-color: #F4F5F8;
+    margin-bottom: clamp(50px, 5.2083333333vw, 200px);
+  }
+  .indication-screen .indication-container {
+    width: 86.4583333333%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .indication-screen .indication-container .indication-heading-container {
+    width: 100%;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .indication-screen .indication-container .indication-heading-container .indication-heading, .indication-screen .indication-container .indication-heading-container .kz-indication-heading {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(13.25px, 6.191588785vw, 53px) !important;
+    text-transform: uppercase !important;
+    color: #FFF200 !important;
+    text-align: center !important;
+  }
+  .indication-screen .indication-container .button-indication {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .indication-screen .indication-container .button-indication .protiv-indication-not, .indication-screen .indication-container .button-indication .indication-button-choosen, .indication-screen .indication-container .button-indication .protiv-indication-choosen, .indication-screen .indication-container .button-indication .indication-button-not {
+    width: clamp(135px, 65.2173913043vw, 540px) !important;
+    height: clamp(23.5px, 11.3526570048vw, 94px) !important;
+    font-size: clamp(9.5px, 4.4392523364vw, 38px) !important;
+  }
+  .indication-screen .indication-container .button-indication .indication-button-choosen, .indication-screen .indication-container .button-indication .indication-button-not {
+    margin-top: clamp(16px, 8.2051282051vw, 64px) !important;
+  }
+  .indication-screen .indication-container .cards-indication {
+    display: flex;
+    flex-direction: column;
+  }
+  .indication-screen .indication-container .cards-indication .card-content {
+    width: clamp(180px, 84.1121495327vw, 720px) !important;
+    height: clamp(150px, 70.0934579439vw, 600px) !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    border-radius: 15px;
+  }
+  .indication-screen .indication-container .cards-indication .card-content .card-heading-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .indication-screen .indication-container .cards-indication .card-content .card-heading-container .card-header, .indication-screen .indication-container .cards-indication .card-content .card-heading-container .kz-card-header {
+    font-size: 17px !important;
+    text-align: center;
+  }
+  .indication-screen .indication-container .cards-indication .card-content .card-heading-container .kz-card-header {
+    font-size: 22px !important;
+  }
+  .indication-screen .indication-container .cards-indication .card-content .card-heading-container .icon-check {
+    display: none !important;
+  }
+  .indication-screen .indication-container .cards-indication .card-content .card-paragraph, .indication-screen .indication-container .cards-indication .card-content .kz-card-paragraph {
+    width: 280px !important;
+    font-size: 16px !important;
+    text-align: center;
+    margin-left: 0px !important;
+  }
+  .indication-screen .indication-container .cards-indication .card-content .kz-card-paragraph {
+    font-size: 18px !important;
+  }
+  .indication-screen .indication-container .medical-indication {
+    display: flex;
+    flex-direction: column;
+  }
+  .indication-screen .indication-container .medical-indication .medical-ind-text, .indication-screen .indication-container .medical-indication .kz-medical-ind-text {
+    font-size: clamp(9px, 4.6153846154vw, 36px) !important;
+    margin-top: clamp(16px, 8.2051282051vw, 64px) !important;
+  }
+  .indication-screen .indication-container .medical-indication .medical-ind-link, .indication-screen .indication-container .medical-indication .kz-medical-ind-link {
+    font-size: clamp(9px, 4.6153846154vw, 36px) !important;
+  }
+}/*# sourceMappingURL=indications_styles.css.map */

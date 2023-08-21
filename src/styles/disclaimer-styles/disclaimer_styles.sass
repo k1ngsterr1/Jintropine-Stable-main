@@ -1,0 +1,167 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+    body
+        width: 100%
+        height: auto
+        font-display: fallback
+        overflow-x: hidden !important
+
+        .disclaimer-screen
+            width: 100%
+            height: auto
+            display: flex
+            margin: auto
+            background-color: white
+            flex-direction: column
+
+            .disclaimer-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+                justify-content: space-between
+
+                .disclaimer-heading-container
+                    display: flex
+                    align-items: center
+                    flex-direction: column
+
+                    .disclaimer-heading, .kz-disclaimer-heading
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(19px, 1.9791666666666667vw,76px)
+                        text-transform: uppercase
+                        color: $main_blue
+
+                    .kz-disclaimer-heading
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(24px,2.5vw,96px)
+
+                    .separator
+                        width: clamp(174.5px,18.177083333333332vw,698px)
+                        height: 1px
+                        margin-top: $sixteenclamp
+                        background-color: $main_blue
+
+                .disclaimer-content
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+
+                    .disclaimer-paragraph, .kz-disclaimer-paragraph
+                        width: clamp(566px,58.958333333333336vw,2264px)
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 300
+                        line-height: 152%
+                        text-align: center
+                        font-size: clamp(13px,1.3541666666666667vw,52px)
+                        margin-top: clamp(50px,5.208333333333333vw,200px)
+
+                    .kz-disclaimer-paragraph
+                        font-family: 'Raleway'
+                        font-style: normal
+                        font-weight: 400
+
+                    .disclaimer-bold-paragraph, .kz-disclaimer-bold-paragraph
+                        width: clamp(450px,46.875vw,1800px)
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 400
+                        line-height: 152%
+                        font-size: clamp(18px,1.875vw,72px)
+                        margin-top: $sixtyfourclamp
+                        text-align: center
+                        color: $main_blue
+
+                    .kz-disclaimer-bold-paragraph
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+
+                    .disclaimer-icon
+                        margin-top: $thirtytwoclamp
+                        margin-bottom: clamp(50px,5.208333333333333vw,200px)
+
+@media screen  and (max-width: 448px)
+
+    .disclaimer-screen
+        width: 100%
+        height: 100vh
+        display: flex
+        margin: auto
+        flex-direction: column
+
+        .arrow-blue
+            display: none !important
+
+        .disclaimer-container
+            width: 86.45833333333333%
+            height: auto
+            display: flex
+            flex-direction: column
+
+            .disclaimer-heading, .kz-disclaimer-heading
+                width: clamp(50px,5.208333333333333vw,200px) !important
+                text-align: center !important
+                margin: auto !important
+                display: flex !important
+                align-items: center !important
+                justify-content: center !important
+                font-size: clamp(17px,7.94392523364486vw,68px) !important
+
+            .disclaimer-content
+
+                .disclaimer-paragraph, .kz-disclaimer-paragraph
+                    width: clamp(180px,84.11214953271028vw,720px) !important
+                    height: auto
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-size: clamp(11px,5.314009661835748vw,44px) !important
+                    margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                    font-weight: 300 !important
+                    margin: auto
+                    text-align: center
+
+                .disclaimer-bold-paragraph, .kz-disclaimer-bold-paragraph
+                    width: clamp(200px,96.61835748792271vw,800px) !important
+                    margin-top: clamp(16px,7.729468599033816vw,64px) !important
+                    font-weight: 500 !important
+                    font-size: clamp(13px,6.280193236714976vw,52px) !important
+
+                .disclaimer-icon
+                    width: clamp(125px,60.38647342995169vw,500px) !important
+                    height: clamp(125px,60.38647342995169vw,500px) !important
+                    margin-top: clamp(16px,7.729468599033816vw,64px) !important

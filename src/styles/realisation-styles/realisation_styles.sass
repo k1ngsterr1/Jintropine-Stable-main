@@ -1,0 +1,224 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+    body
+        width: 100%
+        height: auto
+        font-family: 'Raleway', sans-serif
+        font-display: fallback
+        overflow-x: hidden !important
+
+        .realisation-screen
+            width: 100%
+            height: auto
+            display: flex
+            margin: auto
+            background-color: #022B6B
+            flex-direction: column
+
+            .realisation-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+                justify-content: space-between
+
+                .realisation-heading-container
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+
+                    .realisation-heading, .kz-realisation-heading
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(19px, 1.9791666666666667vw,76px)
+                        text-transform: uppercase
+                        color: #FFF200
+
+                    .kz-realisation-heading
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(24px,2.5vw,96px)
+
+                    .separator
+                        width: clamp(174.5px,18.177083333333332vw,698px)
+                        height: 1px
+                        margin-top: $sixteenclamp
+                        background-color: #FFF200
+
+                .realisation-content
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+                    margin-top: clamp( 50px,5.208333333333333vw,200px)
+                    margin-bottom: clamp( 50px,5.208333333333333vw,200px)
+
+                    .realisation-row-2, .realisation-row-3
+                        margin-top: clamp(70px,7.291666666666667vw,280px)
+
+                    .realisation-row-1, .realisation-row-2, .realisation-row-3
+                        width: 100%
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: center
+                        text-align: center
+                        justify-content: space-between
+
+                        .realisation-img-1, .realisation-img-2
+                            width: clamp(95px,9.895833333333334vw,380px)
+                            height: clamp(95px,9.895833333333334vw,380px)
+
+                        .realisation-img-3
+                            width: clamp(186.5px,19.427083333333332vw,746px)
+                            height: clamp(94.405px,9.833854166666667vw,377.62px)
+
+                        .realisation-img-2-mob
+                            display: none !important
+
+                        .realisation-heading-1, .realisation-heading-2, .realisation-heading-3, .kz-realisation-heading-1, .kz-realisation-heading-2, .kz-realisation-heading-3
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: clamp(18.5px,1.9270833333333333vw,74px)
+                            color: #FFF200
+
+                        .kz-realisation-heading-1, .kz-realisation-heading-2, .kz-realisation-heading-3
+                            font-family: 'Roboto Condensed'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: clamp(22px,2.2916666666666665vw,88px)
+
+                        .realisation-text-1, .realisation-text-2, .realisation-text-3
+                            display: flex
+                            flex-direction: column
+
+                        .realisation-text-1, .realisation-heading-1, .realisation-text-3, .realisation-heading-3, .realisation-text-2, .realisation-heading-2
+                            width: 100%
+                            margin-top: clamp(16px,1.6666666666666667vw,64px)
+                            text-align: center
+
+                        .realisation-paragraph-1, .realisation-paragraph-2, .realisation-paragraph-3, .kz-realisation-paragraph-1, .kz-realisation-paragraph-2, .kz-realisation-paragraph-3
+                            width: clamp(246.5px,25.677083333333332vw,986px)
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 300
+                            color: white
+                            margin: auto
+                            font-size: clamp(12px,1.25vw,48px)
+                            margin-top: $sixteenclamp
+
+                        .kz-realisation-paragraph-1, .kz-realisation-paragraph-2, .kz-realisation-paragraph-3
+                            font-family: 'Raleway'
+                            font-style: normal
+                            font-weight: 500
+
+                        .realisation-paragraph-3
+                            width: 100%
+
+@media screen  and (max-width: 448px)
+
+    body
+        width: 100%
+        height: auto
+        font-family: 'Raleway', sans-serif
+        font-display: fallback
+        overflow-x: hidden !important
+
+        .realisation-screen
+            width: 100%
+            height: auto
+            display: flex
+            margin: auto
+            flex-direction: column
+
+            .realisation-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+                justify-content: space-between
+
+                .realisation-heading-container
+                    width: 100%
+                    margin-top: $sixtyfourclamp
+                    display: flex !important
+                    align-items: center !important
+                    flex-direction: column !important
+
+                    .realisation-heading, .kz-realisation-heading
+                        font-size: clamp(17px,7.94392523364486vw,68px) !important
+                        text-transform: uppercase !important
+                        text-align: center !important
+
+                .realisation-content
+                    display: flex !important
+                    flex-direction: column !important
+
+                    .realisation-row-1, .realisation-row-2, .realisation-row-3
+                        display: flex !important
+                        flex-direction: column !important
+                        align-items: center !important
+                        justify-content: center !important
+
+                        .realisation-img-1, .realisation-img-2, .realisation-img-3
+                            margin-left: 0px !important
+                            margin-right: 0px !important
+
+                        .realisation-img-2-mob
+                            width: clamp(309px,32.1875vw,1236px)
+                            height: clamp(199.5px,20.78125vw,798px)
+                            display: none !important
+
+                        .realisation-img-2
+                            display: flex
+
+                        .realisation-text-1, .realisation-text-2, .realisation-text-3
+                            display: flex !important
+                            align-items: center !important
+                            text-align: center !important
+                            margin-right: 0 !important
+                            margin-left: 0 !important
+                            margin-top: clamp(16px,8.205128205128204vw,64px) !important
+
+                            .realisation-heading-1, .realisation-heading-2, .realisation-heading-3, .kz-realisation-heading-1, .kz-realisation-heading-2, .kz-realisation-heading-3
+                                margin-left: 0px !important
+                                margin-right: 0px !important
+                                margin: auto !important
+                                font-size: clamp(11.5px,5.897435897435898vw,46px) !important
+
+                            .realisation-paragraph-1, .realisation-paragraph-2, .realisation-paragraph-3, .kz-realisation-paragraph-1, .kz-realisation-paragraph-2, .kz-realisation-paragraph-3
+                                font-size: clamp(8.5px,4.358974358974359vw,34px) !important

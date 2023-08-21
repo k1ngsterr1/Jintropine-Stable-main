@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  width: 100%;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  font-display: fallback;
+  overflow-x: hidden !important;
+}
+* body .realisation-screen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  background-color: #022B6B;
+  flex-direction: column;
+}
+* body .realisation-screen .realisation-container {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+  justify-content: space-between;
+}
+* body .realisation-screen .realisation-container .realisation-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body .realisation-screen .realisation-container .realisation-heading-container .realisation-heading, * body .realisation-screen .realisation-container .realisation-heading-container .kz-realisation-heading {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(19px, 1.9791666667vw, 76px);
+  text-transform: uppercase;
+  color: #FFF200;
+}
+* body .realisation-screen .realisation-container .realisation-heading-container .kz-realisation-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 2.5vw, 96px);
+}
+* body .realisation-screen .realisation-container .realisation-heading-container .separator {
+  width: clamp(174.5px, 18.1770833333vw, 698px);
+  height: 1px;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+  background-color: #FFF200;
+}
+* body .realisation-screen .realisation-container .realisation-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+  margin-bottom: clamp(50px, 5.2083333333vw, 200px);
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 {
+  margin-top: clamp(70px, 7.2916666667vw, 280px);
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  justify-content: space-between;
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-img-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-img-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-img-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-img-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-img-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-img-2 {
+  width: clamp(95px, 9.8958333333vw, 380px);
+  height: clamp(95px, 9.8958333333vw, 380px);
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-img-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-img-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-img-3 {
+  width: clamp(186.5px, 19.4270833333vw, 746px);
+  height: clamp(94.405px, 9.8338541667vw, 377.62px);
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-img-2-mob, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-img-2-mob, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-img-2-mob {
+  display: none !important;
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-heading-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-heading-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-heading-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-heading-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-heading-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-heading-3 {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(18.5px, 1.9270833333vw, 74px);
+  color: #FFF200;
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-heading-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-heading-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-heading-3 {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(22px, 2.2916666667vw, 88px);
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 {
+  display: flex;
+  flex-direction: column;
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-heading-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-heading-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-heading-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-heading-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-heading-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-heading-2 {
+  width: 100%;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  text-align: center;
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-paragraph-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-paragraph-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-paragraph-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-paragraph-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-paragraph-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-paragraph-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-paragraph-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-paragraph-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-paragraph-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-paragraph-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-paragraph-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-paragraph-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-paragraph-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-paragraph-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-paragraph-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-paragraph-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-paragraph-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-paragraph-3 {
+  width: clamp(246.5px, 25.6770833333vw, 986px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  color: white;
+  margin: auto;
+  font-size: clamp(12px, 1.25vw, 48px);
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-paragraph-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-paragraph-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .kz-realisation-paragraph-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-paragraph-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-paragraph-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .kz-realisation-paragraph-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-paragraph-1, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-paragraph-2, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .kz-realisation-paragraph-3 {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+}
+* body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-paragraph-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-paragraph-3, * body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-paragraph-3 {
+  width: 100%;
+}
+
+@media screen and (max-width: 448px) {
+  body {
+    width: 100%;
+    height: auto;
+    font-family: "Raleway", sans-serif;
+    font-display: fallback;
+    overflow-x: hidden !important;
+  }
+  body .realisation-screen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+  body .realisation-screen .realisation-container {
+    width: 86.4583333333%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: clamp(50px, 5.2083333333vw, 200px);
+    justify-content: space-between;
+  }
+  body .realisation-screen .realisation-container .realisation-heading-container {
+    width: 100%;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  body .realisation-screen .realisation-container .realisation-heading-container .realisation-heading, body .realisation-screen .realisation-container .realisation-heading-container .kz-realisation-heading {
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+  }
+  body .realisation-screen .realisation-container .realisation-content {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  body .realisation-screen .realisation-container .realisation-content .realisation-row-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-img-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-img-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-img-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-img-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-img-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-img-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-img-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-img-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-img-3 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-img-2-mob, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-img-2-mob, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-img-2-mob {
+    width: clamp(309px, 32.1875vw, 1236px);
+    height: clamp(199.5px, 20.78125vw, 798px);
+    display: none !important;
+  }
+  body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-img-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-img-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-img-2 {
+    display: flex;
+  }
+  body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 {
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-top: clamp(16px, 8.2051282051vw, 64px) !important;
+  }
+  body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .kz-realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .kz-realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .kz-realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .kz-realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .kz-realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .kz-realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .kz-realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .kz-realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .kz-realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .kz-realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .kz-realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .kz-realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .kz-realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .kz-realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .kz-realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .kz-realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .kz-realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .kz-realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .kz-realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .kz-realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .kz-realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .kz-realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .kz-realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .kz-realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .realisation-heading-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .kz-realisation-heading-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .kz-realisation-heading-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .kz-realisation-heading-3 {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    margin: auto !important;
+    font-size: clamp(11.5px, 5.8974358974vw, 46px) !important;
+  }
+  body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .kz-realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .kz-realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-1 .kz-realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .kz-realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .kz-realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-2 .kz-realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .kz-realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .kz-realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-1 .realisation-text-3 .kz-realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .kz-realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .kz-realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-1 .kz-realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .kz-realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .kz-realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-2 .kz-realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .kz-realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .kz-realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-2 .realisation-text-3 .kz-realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .kz-realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .kz-realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-1 .kz-realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .kz-realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .kz-realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-2 .kz-realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .realisation-paragraph-3, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .kz-realisation-paragraph-1, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .kz-realisation-paragraph-2, body .realisation-screen .realisation-container .realisation-content .realisation-row-3 .realisation-text-3 .kz-realisation-paragraph-3 {
+    font-size: clamp(8.5px, 4.358974359vw, 34px) !important;
+  }
+}/*# sourceMappingURL=realisation_styles.css.map */

@@ -1,0 +1,316 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #EADF02
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+
+    body
+
+        .useful-fin
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            background-color: #022B6B
+
+            .useful-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                margin: auto
+                // border: 2px solid blue
+
+                .useful-heading-container
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: center
+                    margin: auto
+                    margin-top: $sixtyfourclamp
+
+                    .useful-heading, .kz-useful-heading
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(19px, 1.9791666666666667vw,76px)
+                        text-transform: uppercase
+                        color: white
+
+                    .kz-useful-heading
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(27.5px,2.8645833333333335vw,110px)
+
+                    .best-hormone, .kz-best-hormone
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(13px,1.3541666666666667vw,52px)
+                        color: #FCEE03
+
+                    .best-hormone-white, .kz-best-hormone-white
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(13px,1.3541666666666667vw,52px)
+                        color: white
+                        margin-top: $sixtyfourclamp
+
+                    .kz-best-hormone-white
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: $thirtytwoclamp
+
+                    .kz-best-hormone
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(17.5px,1.8229166666666667vw,70px)
+
+                .button-container
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+
+                    .qualified-product, .kz-qualified-product
+                        width: clamp(350px,36.458333333333336vw,1400px)
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(13px,1.3541666666666667vw,52px)
+                        text-align: center
+                        color: white
+                        margin: auto
+                        margin-top: $onetwoeightclamp
+                        margin-bottom: $sixtyfourclamp
+
+                    .kz-qualified-product
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(19px,1.9791666666666667vw,76px)
+
+                    .main-button, .kz-main-button
+                        width: clamp(203.5px,21.197916666666668vw,814px)
+                        height: $sixtyfourclamp
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(11px,1.1458333333333333vw,44px)
+                        text-decoration: none !important
+                        background-color: #FCEE03
+                        display: flex
+                        align-items: center
+                        border-radius: 52px
+                        justify-content: center
+                        margin-bottom: clamp(64px,5.714285714285714vw,256px)
+                        border: none
+                        color: #022B6B
+                        margin-top: clamp(22px,2.2916666666666665vw,88px)
+                        &:hover
+                            background-color: $button_hover
+
+                    .kz-main-button
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(14px,1.4583333333333333vw,56px)
+
+                    .separator
+                        width: clamp(174.5px,18.177083333333332vw,698px)
+                        height: 1px
+                        margin-top: $sixteenclamp
+                        background-color: $main_blue
+                        display: none
+
+                .cards
+                    width: 100%
+                    height: auto
+                    display: flex
+                    align-items: flex-start
+                    justify-content: space-between
+                    margin-top: clamp(75px,7.8125vw,200px)
+
+                    .card-one-li
+                        display: flex
+                        align-items: center
+                        justify-content: flex-start
+                        flex-direction: column
+
+                        .muscle-up-icon, .lightning-icon, .protection-icon, .anti-pills-icon, .delivery-icon
+                            width: clamp(71px,7.395833333333333vw,284px)
+                            height: clamp(75px,7.8125vw,300px)
+
+                        .paragraph, .kz-paragraph
+                            width: clamp(150px,15.625vw,600px)
+                            text-align: center
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 300
+                            color: white
+                            font-size: clamp(10px,1.0416666666666667vw,40px)
+                            margin-top: $sixtyfourclamp
+
+                        .kz-paragraph
+                            font-family: 'Raleway'
+                            font-style: normal
+                            font-weight: 500
+
+            .useful-container-mob
+                display: none
+
+@media screen  and (max-width: 448px)
+
+    .useful-fin
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        background-color: $red
+
+        .useful-container
+            display: none !important
+
+            .main-button
+                width: clamp(178.5px,83.41121495327103vw,714px) !important
+                font-size: clamp(10.5px,4.906542056074766vw,42px) !important
+                height: clamp(34px,15.88785046728972vw,136px) !important
+
+            .qualified-product, .kz-qualified-product
+                font-size: clamp(8.5px,3.97196261682243vw,34px)
+
+            .useful-heading-container
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                margin: auto
+                margin-top: clamp(32px,14.953271028037383vw,128px) !important
+
+                .useful-heading, .kz-useful-heading
+                    font-size: clamp(17px,7.94392523364486vw,68px) !important
+                    text-transform: uppercase !important
+                    color: white !important
+
+                .best-hormone, .kz-best-hormone
+                    font-size: clamp(11.5px,5.373831775700935vw,46px) !important
+
+                .best-hormone-white
+                    font-size: clamp(8.5px,3.97196261682243vw,34px) !important
+                    text-align: center !important
+
+                .separator
+                    width: clamp(295px,30.729166666666668vw,1180px)
+                    height: 1px
+                    background-color: #EDE9D0
+                    margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+
+            .cards
+                width: 100%
+                height: auto
+                display: flex
+                flex-direction: column !important
+                align-items: center !important
+                justify-content: space-between
+                margin-top: clamp(25px,11.682242990654206vw,100px) !important
+
+                .card-one-li
+                    display: flex !important
+                    align-items: center !important
+                    flex-direction: row !important
+                    margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+
+                    .muscle-up-icon, .lightning-icon, .protection-icon, .anti-pills-icon, .delivery-icon
+                        width: clamp(53.5px,25vw,214px) !important
+                        height: clamp(30px,14.018691588785046vw,120px) !important
+
+                    .paragraph
+                        font-size: clamp(7px,3.2710280373831777vw,28px) !important
+                        width: clamp(125px,58.41121495327103vw,500px) !important
+                        text-align: left !important
+                        margin-top: 0px !important
+                        margin-left: clamp(8px,3.7383177570093458vw,32px) !important
+
+            .shop-button
+                width: clamp(173.5px,81.07476635514018vw,694px) !important
+                height: clamp(32px,14.953271028037383vw,128px) !important
+                border: 4px solid $main_cream !important
+                font-size: clamp(14px,6.542056074766355vw,56px) !important
+
+        .useful-container-mob
+            width: 86.45833333333333%
+            height: auto !important
+            display: flex !important
+            flex-direction: column
+            margin: auto
+            align-items: center
+            margin-top: clamp(32px,15.458937198067632vw,128px)
+
+            .main-button, .kz-main-button
+                width: clamp(178.5px,83.41121495327103vw,714px) !important
+                font-size: clamp(10.5px,4.906542056074766vw,42px) !important
+                height: clamp(34px,15.88785046728972vw,136px) !important
+                background-color: #FCEE03
+                font-family: "Unbounded"
+                font-style: normal
+                font-weight: 600
+                text-decoration: none
+                display: flex
+                align-items: center
+                border-radius: 52px
+                justify-content: center
+                margin-bottom: clamp(64px, 5.7142857143vw, 256px)
+                border: none
+                color: #022B6B
+                margin-top: clamp(22px, 2.2916666667vw, 88px)
+
+            .kz-main-button
+                font-family: 'Roboto Condensed'
+                font-style: normal
+                font-weight: 700
+                font-size: clamp(16px,7.729468599033816vw,64px) !important
+
+            .useful-heading-container
+                width: 100%
+                display: flex
+                flex-direction: column
+                align-items: center !important
+                justify-content: center !important
+
+                .useful-heading-mob
+                    width: 100%
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: clamp(17px,7.94392523364486vw,68px) !important
+                    text-transform: uppercase
+                    text-align: center
+                    margin: auto
+                    color: white
+
+                .separator
+                    width: clamp(174.5px,18.177083333333332vw,698px)
+                    height: 1px
+                    margin-top: $sixteenclamp
+                    background-color: #FFF200

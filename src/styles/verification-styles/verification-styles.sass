@@ -1,0 +1,222 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+.verification-screen
+    width: 100%
+    height: auto
+    display: flex
+    margin: auto
+    background-color: #0B357A
+    flex-direction: column
+
+    .verification-container
+        width: 86.45833333333333%
+        height: auto
+        display: flex
+        margin: auto
+        flex-direction: column
+
+        .verification-heading-container
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin-bottom: clamp(50px,5.208333333333333vw,200px)
+            margin-top: $sixtyfourclamp
+
+            .verification-heading, .kz-verification-heading
+                text-transform: uppercase
+                font-family: 'Unbounded'
+                font-style: normal
+                font-weight: 700
+                font-size: clamp(19px, 1.9791666666666667vw,76px)
+                color: #FFF200
+
+            .kz-verification-heading
+                font-family: 'Roboto Condensed'
+                font-style: normal
+                font-weight: 700
+                font-size: clamp(24px,2.5vw,96px)
+
+            .separator
+                width: clamp(174.5px,18.177083333333332vw,698px)
+                height: 1px
+                margin-top: $sixteenclamp
+                background-color: #FFF200
+
+        .verification-content
+            width: clamp(686.5px,71.51041666666667vw,2746px)
+            height: clamp(257.5px,26.822916666666668vw,1030px)
+            background-color: #FFF200
+            border-radius: 18px
+            margin: auto
+            display: flex
+            align-items: center
+            justify-content: space-between
+            margin-bottom: $sixtyfourclamp
+
+            .verification-sticker-mob
+                display: none
+
+            .verification-sticker
+                width: clamp(231px,24.0625vw,924px)
+                height: clamp(231px,24.0625vw,924px)
+                margin-right: $thirtytwoclamp
+
+            .verification-description
+                display: flex
+                flex-direction: column
+                margin-left: $thirtytwoclamp
+
+                .ver-description-heading, .kz-ver-description-heading
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 600
+                    font-size: clamp(22.5px,2.34375vw,90px)
+                    color: #022B6B
+
+                .kz-ver-description-heading
+                    font-family: 'Roboto Condensed'
+                    font-style: normal
+                    font-weight: 700
+
+                .ver-paragraph-zero, .ver-paragraph-one, .ver-paragraph-two, .kz-ver-paragraph-zero, .kz-ver-paragraph-one, .kz-ver-paragraph-two
+                    width: clamp(343px,35.729166666666664vw,1372px)
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 500
+                    color: #022B6B
+                    font-size: clamp(10.5px,1.09375vw,42px)
+
+                .ver-paragraph-zero, .kz-ver-paragraph-zero
+                    margin-top: $sixteenclamp
+
+                .ver-paragraph-one, .ver-paragraph-two, .kz-ver-paragraph-one, .kz-ver-paragraph-two
+                    margin-top: $thirtytwoclamp
+
+                .kz-ver-paragraph-one, .kz-ver-paragraph-two, .kz-ver-paragraph-zero
+                    font-family: 'Raleway'
+                    font-style: normal
+                    font-weight: 700
+
+                .verification-button
+                    width: clamp(188.5px,19.635416666666668vw,754px)
+                    height: clamp(27.5px,2.8645833333333335vw,110px)
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background-color: #022B6B
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 600
+                    font-size: clamp(11px,1.1458333333333333vw,44px)
+                    border-radius: 60px
+                    color: #FFF200
+                    text-decoration: none
+                    font-size: clamp(14.5px,1.5104166666666667vw,58px)
+                    margin-top: $thirtytwoclamp
+                    transition: 0.3s all
+                    &:hover
+                        background-color: #02245A
+
+@media screen  and (max-width: 448px)
+
+    .verification-screen
+        width: 100%
+        height: auto
+        display: flex
+        margin: auto
+        flex-direction: column
+
+        .verification-container
+            width: 86.45833333333333%
+            height: auto
+            display: flex
+            flex-direction: column
+            margin: auto
+
+            .verification-description
+                display: flex
+                flex-direction: column
+                margin-left: 0px !important
+
+            .verification-heading, .kz-verification-heading
+                font-size: clamp(17px,7.94392523364486vw,68px) !important
+                text-align: center !important
+                margin-left: 0px !important
+                text-transform: uppercase !important
+                margin-top: clamp(16px,7.766990291262136vw,64px) !important
+
+            .separator
+                width: clamp(174.5px,18.177083333333332vw,698px)
+                height: 1px
+                margin-top: $sixtyfourclamp!important
+                background-color: $main_blue
+
+        .verification-content
+            width: clamp(175px,84.95145631067962vw,700px) !important
+            height: auto !important
+            border-radius: 18px !important
+            margin: auto !important
+            display: flex !important
+            align-items: center !important
+            flex-direction: column !important
+
+            .verification-sticker-mob
+                width: clamp(131px,63.592233009708735vw,524px) !important
+                height: clamp(131px,63.592233009708735vw,524px) !important
+                display: flex !important
+                align-items: center !important
+                margin: auto !important
+                margin-top: clamp(16px,7.766990291262136vw,64px) !important
+
+            .verification-sticker
+                display: none !important
+
+            .ver-description-heading, .kz-ver-description-heading
+                font-size: clamp(12.5px,6.067961165048544vw,50px) !important
+                margin: auto !important
+                text-align: center !important
+                margin-top: clamp(8px,3.883495145631068vw,32px) !important
+
+            .ver-paragraph-zero, .ver-paragraph-one, .ver-paragraph-two, .kz-ver-paragraph-zero, .kz-ver-paragraph-one, .kz-ver-paragraph-two
+                width: clamp(158.5px,76.94174757281553vw,634px) !important
+                text-align: center !important
+                font-weight: 600 !important
+                padding: 0 !important
+                margin: 0 !important
+                margin-left: clamp(8px,3.7383177570093458vw,32px) !important
+                font-size: clamp(8px,3.883495145631068vw,32px) !important
+
+            .ver-paragraph-zero, .ver-paragraph-one, .ver-paragraph-two, .kz-ver-paragraph-zero, .kz-ver-paragraph-one, .kz-ver-paragraph-two
+                margin-top: clamp(16px,7.766990291262136vw,64px) !important
+
+            .verification-button
+                width: clamp(149px,72.33009708737865vw,596px) !important
+                height: clamp(21.735px,10.550970873786408vw,86.94px) !important
+                display: flex !important
+                align-items: center !important
+                justify-content: center !important
+                margin: auto !important
+                margin-top: clamp(16px,7.766990291262136vw,64px) !important
+                font-size: 19px !important
+                margin-bottom: 32px !important

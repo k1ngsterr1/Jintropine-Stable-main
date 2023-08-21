@@ -1,0 +1,330 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #EADF02
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+    body
+        width: 100%
+        height: auto
+        font-family: 'Raleway', sans-serif
+        font-display: fallback
+        overflow-x: hidden !important
+
+        .indication-screen
+            width: 100%
+            height: auto
+            display: flex
+            margin: auto
+            background-color: #022B6B
+            flex-direction: column
+
+            .indication-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+                justify-content: space-between
+
+                .indication-heading-container
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+
+                    .indication-heading, .kz-indication-heading
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(19px, 1.9791666666666667vw,76px)
+                        text-transform: uppercase
+                        color: #FFF200
+
+                    .kz-indication-heading
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(24px,2.5vw,96px)
+
+                    .separator
+                        width: clamp(174.5px,18.177083333333332vw,698px)
+                        height: 1px
+                        margin-top: $sixteenclamp
+                        background-color: #FFF200
+
+                .button-indication
+                    width: clamp(322px,33.541666666666664vw,1288px)
+                    margin: auto
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    margin-top: clamp(50px,5.208333333333333vw,200px)
+
+                    .protiv-indication-not
+                        width: clamp(153px,15.9375vw,612px)
+                        height: clamp(24.5px,2.5520833333333335vw,98px)
+                        border: 3px solid #FFF200
+                        border-radius: 58px
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 600
+                        background: transparent
+                        font-size: clamp(9.5px,0.9895833333333334vw,38px)
+                        color: #FFF200
+                        &:hover
+                            background-color: $button_hover
+                            color: #022B6B
+                            border: none
+
+                    .indication-button-choosen
+                        width: clamp(153px,15.9375vw,612px)
+                        height: clamp(24.5px,2.5520833333333335vw,98px)
+                        border-radius: 58px
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(9.5px,0.9895833333333334vw,38px)
+                        color: #022B6B
+                        background-color: #FFF200
+                        &:hover
+                            background-color: $button_hover
+
+                    .indication-button-not
+                        width: clamp(153px,15.9375vw,612px)
+                        height: clamp(24.5px,2.5520833333333335vw,98px)
+                        border: 3px solid #FFF200
+                        border-radius: 58px
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 600
+                        background: transparent
+                        font-size: clamp(9.5px,0.9895833333333334vw,38px)
+                        color: #FFF200
+                        &:hover
+                            background-color: $button_hover
+                            color: #022B6B
+                            border: none
+
+                    .protiv-indication-choosen
+                        width: clamp(153px,15.9375vw,612px)
+                        height: clamp(24.5px,2.5520833333333335vw,98px)
+                        border-radius: 58px
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(9.5px,0.9895833333333334vw,38px)
+                        color: #022B6B
+                        background-color: #FFF200
+                        &:hover
+                            background-color: $button_hover
+
+                .cards-indication
+                    width: 100%
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+
+                    .card-content
+                        width: clamp(263px,27.395833333333332vw,1052px)
+                        height: clamp(141.805px,14.771354166666667vw,567.22px)
+                        display: flex
+                        flex-direction: column
+                        border: 3px solid #0340A1
+                        border-radius: 15px
+                        margin-top: clamp(50px,5.208333333333333vw,200px)
+
+                        .card-heading-container
+                            display: flex
+                            align-items: center
+                            margin-top: $thirtytwoclamp
+                            margin-left: $thirtytwoclamp
+
+                            .card-header, .kz-card-header
+                                font-family: 'Unbounded'
+                                font-style: normal
+                                font-weight: 600
+                                font-size: clamp(11px,1.1458333333333333vw,44px)
+                                color: #FFF200
+                                margin-left: $eightclamp
+
+                            .kz-card-header
+                                font-family: 'Roboto Condensed'
+                                font-style: normal
+                                font-weight: 500
+                                font-size: clamp(12.5px,1.3020833333333333vw,50px)
+
+                            .icon-check
+                                color: #FFF200
+                                font-size: clamp(14px,1.4583333333333333vw,56px)
+
+                        .card-paragraph, .kz-card-paragraph
+                            width: clamp(225px,23.4375vw,900px)
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 400
+                            color: white
+                            font-size: clamp(9.5px,0.9895833333333334vw,38px)
+                            margin-top: $thirtytwoclamp
+                            margin-left: $thirtytwoclamp
+                            margin-bottom: $thirtytwoclamp
+
+                        .kz-card-paragraph
+                            font-family: 'Raleway'
+                            font-style: normal
+                            font-weight: 500
+
+                .medical-indication
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    margin-top: clamp(27.5px,2.8645833333333335vw,110px)
+
+                    .medical-ind-text, .kz-medical-ind-text
+                        width: clamp(357px,37.1875vw,1428px)
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 500
+                        font-size: clamp(11px,1.1979166666666667vw,46px)
+                        text-align: center
+                        color: #FFF200
+
+                    .kz-medical-ind-text
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(13px, 1.3541666666666667vw,52px)
+
+                    .medical-ind-link, .kz-medical-ind-link
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(14px,1.4583333333333333vw,56px)
+                        text-align: center
+                        text-decoration-line: underline
+                        color: white
+                        margin-top: $thirtytwoclamp
+                        margin-bottom: clamp(50px,5.208333333333333vw,200px)
+
+                    .kz-medical-ind-link
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(14.5px,1.5104166666666667vw,58px)
+
+@media screen  and (max-width: 448px)
+
+    .indication-screen
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        margin-top: $sixtyfourclamp
+        background-color: $main_cream
+        margin-bottom: clamp(50px,5.208333333333333vw,200px)
+
+        .indication-container
+            width: 86.45833333333333%
+            height: auto
+            display: flex
+            flex-direction: column
+            margin: auto
+
+            .indication-heading-container
+                width: 100%
+                margin-top: $sixtyfourclamp
+                display: flex !important
+                align-items: center !important
+                flex-direction: column !important
+
+                .indication-heading, .kz-indication-heading
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: clamp(13.25px,6.191588785046729vw,53px) !important
+                    text-transform: uppercase !important
+                    color: #FFF200 !important
+                    text-align: center !important
+
+            .button-indication
+                display: flex !important
+                flex-direction: column !important
+
+                .protiv-indication-not, .indication-button-choosen, .protiv-indication-choosen, .indication-button-not
+                    width: clamp(135px,65.21739130434783vw,540px) !important
+                    height: clamp(23.5px,11.352657004830919vw,94px) !important
+                    font-size: clamp(9.5px,4.4392523364485985vw,38px) !important
+
+                .indication-button-choosen, .indication-button-not
+                    margin-top: clamp(16px,8.205128205128204vw,64px) !important
+
+            .cards-indication
+                display: flex
+                flex-direction: column
+
+                .card-content
+                    width: clamp(180px,84.11214953271028vw,720px) !important
+                    height: clamp(150px,70.09345794392523vw,600px) !important
+                    display: flex !important
+                    flex-direction: column !important
+                    align-items: center !important
+                    border-radius: 15px
+
+                    .card-heading-container
+                        display: flex !important
+                        align-items: center !important
+                        justify-content: center !important
+                        margin-left: 0px !important
+                        margin-right: 0px !important
+
+                        .card-header, .kz-card-header
+                            font-size: 17px !important
+                            text-align: center
+
+                        .kz-card-header
+                            font-size: 22px !important
+
+                        .icon-check
+                            display: none !important
+
+                    .card-paragraph, .kz-card-paragraph
+                        width: 280px !important
+                        font-size: 16px !important
+                        text-align: center
+                        margin-left: 0px !important
+
+                    .kz-card-paragraph
+                        font-size: 18px !important
+
+            .medical-indication
+                display: flex
+                flex-direction: column
+
+                .medical-ind-text, .kz-medical-ind-text
+                    font-size: clamp(9px,4.615384615384615vw,36px) !important
+                    margin-top: clamp(16px,8.205128205128204vw,64px) !important
+
+                .medical-ind-link, .kz-medical-ind-link
+                    font-size: clamp(9px,4.615384615384615vw,36px) !important

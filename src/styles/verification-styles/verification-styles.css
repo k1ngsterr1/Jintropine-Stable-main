@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+.verification-screen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  background-color: #0B357A;
+  flex-direction: column;
+}
+.verification-screen .verification-container {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+.verification-screen .verification-container .verification-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: clamp(50px, 5.2083333333vw, 200px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+}
+.verification-screen .verification-container .verification-heading-container .verification-heading, .verification-screen .verification-container .verification-heading-container .kz-verification-heading {
+  text-transform: uppercase;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(19px, 1.9791666667vw, 76px);
+  color: #FFF200;
+}
+.verification-screen .verification-container .verification-heading-container .kz-verification-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 2.5vw, 96px);
+}
+.verification-screen .verification-container .verification-heading-container .separator {
+  width: clamp(174.5px, 18.1770833333vw, 698px);
+  height: 1px;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+  background-color: #FFF200;
+}
+.verification-screen .verification-container .verification-content {
+  width: clamp(686.5px, 71.5104166667vw, 2746px);
+  height: clamp(257.5px, 26.8229166667vw, 1030px);
+  background-color: #FFF200;
+  border-radius: 18px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: clamp(32px, 3.3333333333vw, 128px);
+}
+.verification-screen .verification-container .verification-content .verification-sticker-mob {
+  display: none;
+}
+.verification-screen .verification-container .verification-content .verification-sticker {
+  width: clamp(231px, 24.0625vw, 924px);
+  height: clamp(231px, 24.0625vw, 924px);
+  margin-right: clamp(16px, 1.6666666667vw, 64px);
+}
+.verification-screen .verification-container .verification-content .verification-description {
+  display: flex;
+  flex-direction: column;
+  margin-left: clamp(16px, 1.6666666667vw, 64px);
+}
+.verification-screen .verification-container .verification-content .verification-description .ver-description-heading, .verification-screen .verification-container .verification-content .verification-description .kz-ver-description-heading {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(22.5px, 2.34375vw, 90px);
+  color: #022B6B;
+}
+.verification-screen .verification-container .verification-content .verification-description .kz-ver-description-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+}
+.verification-screen .verification-container .verification-content .verification-description .ver-paragraph-zero, .verification-screen .verification-container .verification-content .verification-description .ver-paragraph-one, .verification-screen .verification-container .verification-content .verification-description .ver-paragraph-two, .verification-screen .verification-container .verification-content .verification-description .kz-ver-paragraph-zero, .verification-screen .verification-container .verification-content .verification-description .kz-ver-paragraph-one, .verification-screen .verification-container .verification-content .verification-description .kz-ver-paragraph-two {
+  width: clamp(343px, 35.7291666667vw, 1372px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 500;
+  color: #022B6B;
+  font-size: clamp(10.5px, 1.09375vw, 42px);
+}
+.verification-screen .verification-container .verification-content .verification-description .ver-paragraph-zero, .verification-screen .verification-container .verification-content .verification-description .kz-ver-paragraph-zero {
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+}
+.verification-screen .verification-container .verification-content .verification-description .ver-paragraph-one, .verification-screen .verification-container .verification-content .verification-description .ver-paragraph-two, .verification-screen .verification-container .verification-content .verification-description .kz-ver-paragraph-one, .verification-screen .verification-container .verification-content .verification-description .kz-ver-paragraph-two {
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+.verification-screen .verification-container .verification-content .verification-description .kz-ver-paragraph-one, .verification-screen .verification-container .verification-content .verification-description .kz-ver-paragraph-two, .verification-screen .verification-container .verification-content .verification-description .kz-ver-paragraph-zero {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+}
+.verification-screen .verification-container .verification-content .verification-description .verification-button {
+  width: clamp(188.5px, 19.6354166667vw, 754px);
+  height: clamp(27.5px, 2.8645833333vw, 110px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #022B6B;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(11px, 1.1458333333vw, 44px);
+  border-radius: 60px;
+  color: #FFF200;
+  text-decoration: none;
+  font-size: clamp(14.5px, 1.5104166667vw, 58px);
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  transition: 0.3s all;
+}
+.verification-screen .verification-container .verification-content .verification-description .verification-button:hover {
+  background-color: #02245A;
+}
+
+@media screen and (max-width: 448px) {
+  .verification-screen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+  .verification-screen .verification-container {
+    width: 86.4583333333%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .verification-screen .verification-container .verification-description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px !important;
+  }
+  .verification-screen .verification-container .verification-heading, .verification-screen .verification-container .kz-verification-heading {
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+    text-align: center !important;
+    margin-left: 0px !important;
+    text-transform: uppercase !important;
+    margin-top: clamp(16px, 7.7669902913vw, 64px) !important;
+  }
+  .verification-screen .verification-container .separator {
+    width: clamp(174.5px, 18.1770833333vw, 698px);
+    height: 1px;
+    margin-top: clamp(32px, 3.3333333333vw, 128px) !important;
+    background-color: #00346E;
+  }
+  .verification-screen .verification-content {
+    width: clamp(175px, 84.9514563107vw, 700px) !important;
+    height: auto !important;
+    border-radius: 18px !important;
+    margin: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .verification-screen .verification-content .verification-sticker-mob {
+    width: clamp(131px, 63.5922330097vw, 524px) !important;
+    height: clamp(131px, 63.5922330097vw, 524px) !important;
+    display: flex !important;
+    align-items: center !important;
+    margin: auto !important;
+    margin-top: clamp(16px, 7.7669902913vw, 64px) !important;
+  }
+  .verification-screen .verification-content .verification-sticker {
+    display: none !important;
+  }
+  .verification-screen .verification-content .ver-description-heading, .verification-screen .verification-content .kz-ver-description-heading {
+    font-size: clamp(12.5px, 6.067961165vw, 50px) !important;
+    margin: auto !important;
+    text-align: center !important;
+    margin-top: clamp(8px, 3.8834951456vw, 32px) !important;
+  }
+  .verification-screen .verification-content .ver-paragraph-zero, .verification-screen .verification-content .ver-paragraph-one, .verification-screen .verification-content .ver-paragraph-two, .verification-screen .verification-content .kz-ver-paragraph-zero, .verification-screen .verification-content .kz-ver-paragraph-one, .verification-screen .verification-content .kz-ver-paragraph-two {
+    width: clamp(158.5px, 76.9417475728vw, 634px) !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-left: clamp(8px, 3.738317757vw, 32px) !important;
+    font-size: clamp(8px, 3.8834951456vw, 32px) !important;
+  }
+  .verification-screen .verification-content .ver-paragraph-zero, .verification-screen .verification-content .ver-paragraph-one, .verification-screen .verification-content .ver-paragraph-two, .verification-screen .verification-content .kz-ver-paragraph-zero, .verification-screen .verification-content .kz-ver-paragraph-one, .verification-screen .verification-content .kz-ver-paragraph-two {
+    margin-top: clamp(16px, 7.7669902913vw, 64px) !important;
+  }
+  .verification-screen .verification-content .verification-button {
+    width: clamp(149px, 72.3300970874vw, 596px) !important;
+    height: clamp(21.735px, 10.5509708738vw, 86.94px) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: auto !important;
+    margin-top: clamp(16px, 7.7669902913vw, 64px) !important;
+    font-size: 19px !important;
+    margin-bottom: 32px !important;
+  }
+}/*# sourceMappingURL=verification-styles.css.map */

@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* body .muscle-card, * body .power-card, * body .imm-card {
+  width: clamp(244px, 25.4166666667vw, 976px);
+  height: clamp(280px, 29.1666666667vw, 1120px);
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  align-items: center;
+  cursor: pointer;
+  background-color: transparent !important;
+  border: 4px solid #0B357A;
+  transition: 0.3s all;
+  margin-bottom: clamp(40px, 4.1666666667vw, 160px);
+}
+* body .muscle-card:hover, * body .power-card:hover, * body .imm-card:hover {
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.1);
+}
+* body .muscle-card .power-circle, * body .muscle-card .muscle-circle, * body .muscle-card .imm-circle, * body .power-card .power-circle, * body .power-card .muscle-circle, * body .power-card .imm-circle, * body .imm-card .power-circle, * body .imm-card .muscle-circle, * body .imm-card .imm-circle {
+  width: 110px;
+  height: 110px;
+  background: transparent;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #FCEE03;
+  margin-top: clamp(20.5px, 2.1354166667vw, 82px);
+}
+* body .muscle-card .power-circle .dumbbell-icon, * body .muscle-card .power-circle .heart-icon, * body .muscle-card .power-circle .weight-icon, * body .muscle-card .muscle-circle .dumbbell-icon, * body .muscle-card .muscle-circle .heart-icon, * body .muscle-card .muscle-circle .weight-icon, * body .muscle-card .imm-circle .dumbbell-icon, * body .muscle-card .imm-circle .heart-icon, * body .muscle-card .imm-circle .weight-icon, * body .power-card .power-circle .dumbbell-icon, * body .power-card .power-circle .heart-icon, * body .power-card .power-circle .weight-icon, * body .power-card .muscle-circle .dumbbell-icon, * body .power-card .muscle-circle .heart-icon, * body .power-card .muscle-circle .weight-icon, * body .power-card .imm-circle .dumbbell-icon, * body .power-card .imm-circle .heart-icon, * body .power-card .imm-circle .weight-icon, * body .imm-card .power-circle .dumbbell-icon, * body .imm-card .power-circle .heart-icon, * body .imm-card .power-circle .weight-icon, * body .imm-card .muscle-circle .dumbbell-icon, * body .imm-card .muscle-circle .heart-icon, * body .imm-card .muscle-circle .weight-icon, * body .imm-card .imm-circle .dumbbell-icon, * body .imm-card .imm-circle .heart-icon, * body .imm-card .imm-circle .weight-icon {
+  font-size: 50px;
+  color: #FCEE03;
+}
+* body .muscle-card .power-c-heading, * body .muscle-card .imm-c-heading, * body .muscle-card .muscle-c-heading, * body .muscle-card .kz-imm-c-heading, * body .power-card .power-c-heading, * body .power-card .imm-c-heading, * body .power-card .muscle-c-heading, * body .power-card .kz-imm-c-heading, * body .imm-card .power-c-heading, * body .imm-card .imm-c-heading, * body .imm-card .muscle-c-heading, * body .imm-card .kz-imm-c-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(27.5px, 2.8645833333vw, 110px);
+  text-align: center;
+  margin-top: clamp(25.5px, 2.65625vw, 102px);
+  color: #FCEE03;
+}
+* body .muscle-card .power-c-p, * body .muscle-card .imm-c-p, * body .muscle-card .muscle-c-p, * body .muscle-card .kz-imm-p, * body .power-card .power-c-p, * body .power-card .imm-c-p, * body .power-card .muscle-c-p, * body .power-card .kz-imm-p, * body .imm-card .power-c-p, * body .imm-card .imm-c-p, * body .imm-card .muscle-c-p, * body .imm-card .kz-imm-p {
+  width: clamp(175px, 18.2291666667vw, 700px);
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(9.75px, 1.015625vw, 39px);
+  text-align: center;
+  color: white;
+  margin-top: clamp(19px, 1.9791666667vw, 76px);
+}
+* body .muscle-card .imm-c-p, * body .power-card .imm-c-p, * body .imm-card .imm-c-p {
+  width: clamp(200px, 20.8333333333vw, 800px);
+}
+
+@media screen and (max-width: 448px) {
+  .muscle-card {
+    margin-top: clamp(16px, 7.729468599vw, 64px);
+  }
+  .muscle-card, .power-card, .imm-card {
+    width: clamp(164px, 79.2270531401vw, 656px) !important;
+    height: auto !important;
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    align-items: center;
+    cursor: pointer;
+    background-color: #093D7C !important;
+    transition: 0.3s all;
+    margin-bottom: clamp(40px, 4.1666666667vw, 160px);
+  }
+  .muscle-card:hover, .power-card:hover, .imm-card:hover {
+    box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.25);
+  }
+  .muscle-card .power-c-p, .muscle-card .imm-c-p, .muscle-card .muscle-c-p, .power-card .power-c-p, .power-card .imm-c-p, .power-card .muscle-c-p, .imm-card .power-c-p, .imm-card .imm-c-p, .imm-card .muscle-c-p {
+    width: 78.8976377953% !important;
+    font-family: "Gothic A1", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: clamp(9.25px, 4.3224299065vw, 37px) !important;
+    text-align: center;
+    color: white !important;
+    margin-top: clamp(19px, 1.9791666667vw, 76px);
+    margin-bottom: 64px;
+  }
+}/*# sourceMappingURL=cards_styles.css.map */

@@ -1,0 +1,224 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+
+    body
+
+        button, a
+            cursor: pointer
+            transition: 0.3s all
+
+        .about-jin
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            margin-top: $thirtytwoclamp
+            background-color: $background
+            // margin-bottom: clamp(50px,5.208333333333333vw,200px)
+
+            .about-arrow
+                position: absolute
+                width: clamp(143px,14.895833333333334vw,572px)
+                height: clamp(108px,11.25vw,432px)
+                left: clamp(375px,39.0625vw,1500px)
+                top: clamp(700px,72.91666666666667vw,2800px)
+
+            .girl-about-phone
+                display: none
+
+            .about-jin-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                margin: auto
+
+                .about-proto
+                    width: clamp(297.5px,30.989583333333332vw,1190px)
+                    height: clamp(447.5px,46.614583333333336vw,1790px)
+                    position: sticky
+                    margin-left: clamp(-50px,-5.208333333333333vw,-200px)
+
+                .about-heading-container
+                    margin: auto
+                    margin-top: $sixtyfourclamp
+                    display: flex
+                    align-items: center
+                    flex-direction: column
+
+                    .about-heading, .kz-about-heading
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(19px, 1.9791666666666667vw,76px)
+                        text-transform: uppercase
+                        color: $main_blue
+
+                    .kz-about-heading
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(24px,2.5vw,96px)
+
+                    .separator
+                        width: clamp(174.5px,18.177083333333332vw,698px)
+                        height: 1px
+                        margin-top: $sixteenclamp
+                        background-color: $main_blue
+
+                .about-content
+                    width: auto
+                    height: auto
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    text-align: right
+
+                    .about-paragraph, .kz-about-paragraph
+                        width: clamp(381.5px,39.739583333333336vw,1526px)
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 300
+                        line-height: 151%
+                        font-size: clamp(13px,1.3541666666666667vw,52px)
+                        color: #1e1e1e
+
+                    .more-info, .kz-more-info
+                        width: clamp(212.5px,22.135416666666668vw,850px)
+                        height: $sixtyfourclamp
+                        background-color: #022B6B
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 600
+                        font-size: clamp(11px,1.1458333333333333vw,44px)
+                        align-items: center
+                        justify-content: center
+                        margin-top: $sixtyfourclamp
+                        color: #FFF200
+                        border-radius: 71px
+                        &:hover
+                            background-color: #02245A
+
+                    .kz-more-info
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(14px,1.4583333333333333vw,56px)
+
+                    .kz-about-paragraph
+                        font-family: 'Raleway'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: clamp(14.5px,1.5104166666666667vw,58px)
+
+@media screen  and (max-width: 448px)
+
+    .about-jin
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        margin-top: $sixtyfourclamp
+        background-color: $main_cream
+
+        .girl-about-phone
+            width: clamp(196.5px,94.92753623188406vw,786px)
+            height: clamp(310px,149.7584541062802vw,1240px)
+            margin-left: clamp(10px,4.672897196261682vw,40px)
+            display: flex !important
+
+        .about-arrow
+            display: none
+
+        .about-jin-container
+            width: 86.45833333333333%
+            height: auto
+            display: flex
+            align-items: center !important
+            justify-content: center !important
+            flex-direction: column !important
+            margin: auto !important
+
+            .about-proto
+                display: none !important
+
+        .about-heading-container
+            margin: auto
+            margin-top: clamp(32px,14.953271028037383vw,128px) !important
+            display: flex
+            align-items: center !important
+            flex-direction: column
+
+            .about-heading, .kz-about-heading
+                width: clamp(50px,5.208333333333333vw,200px) !important
+                text-align: center !important
+                margin: auto !important
+                display: flex !important
+                align-items: center !important
+                justify-content: center !important
+                font-size: clamp(17px,7.94392523364486vw,68px) !important
+                text-align: center !important
+
+            .separator
+                width: clamp(145.5px,67.99065420560747vw,582px)
+                margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+
+        .about-content
+            display: flex
+            align-items: center !important
+            justify-content: center !important
+            text-align: center
+
+            .about-paragraph, .kz-about-paragraph
+                width: clamp(180px,84.11214953271028vw,720px) !important
+                height: auto
+                font-family: 'Unbounded' !important
+                font-style: normal !important
+                font-weight: 500
+                font-size: clamp(10px,4.672897196261682vw,40px) !important
+                margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+                font-weight: 500 !important
+                margin: auto
+                color: #022B6B !important
+                text-align: center
+
+            .kz-about-paragraph
+                font-family: 'Raleway' !important
+                font-style: normal !important
+                font-weight: 500 !important
+                font-size: clamp(10px,4.672897196261682vw,40px) !important
+
+        .more-info, .kz-more-info
+            width: clamp(178.5px,83.41121495327103vw,714px) !important
+            height: clamp(34px,15.88785046728972vw,136px) !important
+            margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+            margin-bottom: clamp(32px,14.953271028037383vw,128px) !important
+            font-size: clamp(9px,4.205607476635514vw,36px) !important
+
+        .kz-more-info
+            font-size: clamp(12px,5.797101449275362vw,48px) !important
+            font-family: 'Roboto Condensed'
+            font-style: normal
+            font-weight: 700

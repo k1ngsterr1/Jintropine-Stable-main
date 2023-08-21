@@ -1,0 +1,149 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+
+    body
+
+        .more-info-page
+            width: 100%
+            height: auto
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            background-color: #022B6B
+            margin: auto
+
+            .more-info-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+                justify-content: space-between
+                margin-bottom: clamp(100px,10.416666666666666vw,400px)
+
+            .paragraph-container
+                width: auto
+                height: auto
+                display: flex
+                flex-direction: column
+
+                .info-paragraph
+                    width: clamp(496.5px,51.71875vw,1986px)
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 300
+                    color: #FFF200
+                    font-weight: 500
+                    font-size: 19px
+
+                .section
+                    margin-top: $thirtytwoclamp
+
+            .buttons-container
+                width: auto
+                height: auto
+                display: flex
+                margin-top: $sixtyfourclamp
+
+                .go-back-button
+                    width: clamp(179px,18.645833333333332vw,716px)
+                    height: $sixtyfourclamp
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 600
+                    font-size: clamp(10.5px,0.9375vw,42px)
+                    color: #022B6B
+                    background-color: #FFF200
+                    border-radius: 60px
+                    transition: 0.3s all
+                    &:hover
+                        background-color: #EDE100
+
+                .main-button
+                    width: clamp(179px,18.645833333333332vw,716px)
+                    height: $sixtyfourclamp
+                    text-decoration: none !important
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 600
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    font-size: clamp(10.5px,0.9375vw,42px)
+                    color: #022B6B
+                    border-radius: 60px
+                    background-color: #FFF200
+                    margin-left: $thirtytwoclamp
+                    transition: 0.3s all
+                    &:hover
+                        background-color: #EDE100
+
+                    .telegram-icon
+                        margin-right: clamp(6px,0.625vw,24px)
+
+            .more-info-img
+                width: clamp(600px,53.57142857142857vw,2400px)
+                height: auto
+                left:  clamp(650px,58.035714285714285vw,2600px)
+                top: clamp(225px,20.089285714285715vw,900px)
+                position: absolute
+
+@media screen  and (max-width: 448px)
+
+    .more-info-page
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        margin: auto
+
+        .separator
+            display: none
+
+        .paragraph-container
+            width: auto
+            height: auto
+            display: flex
+            flex-direction: column
+
+            .info-paragraph
+                width: clamp(182px,85.04672897196262vw,728px) !important
+                font-weight: 500 !important
+                text-align: center
+                font-size: 16px !important
+
+            .buttons-container
+                display: flex !important
+                margin: auto !important
+                align-items: center !important
+                flex-direction: column !important
+                margin-top: clamp(32px,14.953271028037383vw,128px) !important
+
+                .go-back-button, .main-button
+                    width: clamp(150px,70.09345794392523vw,600px) !important
+                    margin-top: clamp(8px,3.7383177570093458vw,32px) !important
+                    height: clamp(27.5px,12.850467289719626vw,110px) !important
+                    font-size: clamp(8px,3.7383177570093458vw,32px) !important
+                    margin-left: 0 !important

@@ -1,0 +1,359 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    body
+
+        .modal
+            width: clamp(416.5px,43.385416666666664vw,1666px)
+            height: clamp(150px,15.625vw,600px)
+            display: flex
+            justify-content: center
+            flex-direction: column
+            align-items: center
+            background: #022B6B
+            border: 4px solid #FCEE03
+            box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.25) !important
+            border-radius: 17px
+            -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards
+
+            .popup-heading
+                font-family: 'Unbounded'
+                font-style: normal
+                font-weight: 700
+                font-size: clamp(16px,1.6666666666666667vw,64px)
+                text-align: center
+                text-transform: uppercase
+                color: #FCEE03
+
+            .popup-paragraph
+                ont-family: 'Unbounded'
+                font-style: normal
+                font-weight: 400
+                font-size: clamp(15px,1.5625vw,60px)
+                color: white
+                text-align: center
+                margin-top: $thirtytwoclamp
+
+            .close
+                display: none
+
+        .popup-overlay
+            background: rgba(0, 0, 0, 0.55)
+
+        .contacts
+            width: 100%
+            height: auto
+            display: flex
+            background: #022B6B
+            flex-direction: column
+
+            .contacts-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                margin: auto
+
+                .contact-arrow
+                    position: absolute
+                    width: clamp(194.74px,20.285416666666666vw,778.96px)
+                    height: clamp(139px,14.479166666666666vw,556px)
+                    left: clamp(230px,23.940625vw,920px)
+                    display: none !important
+
+                .contacts-heading-container
+                    width: auto
+                    height: auto
+                    display: flex
+                    align-items: center
+                    flex-direction: column
+                    margin-top: $sixtyfourclamp
+
+                    .contacts-heading, .kz-contacts-heading
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(19px, 1.9791666666666667vw,76px)
+                        text-transform: uppercase
+                        color: #FCEE03
+
+                    .kz-contacts-heading
+                        font-family: 'Roboto Condensed'
+                        font-style: normal
+                        font-weight: 700
+                        font-size: clamp(24px,2.5vw,96px)
+
+                    .separator
+                        width: clamp(295px,30.729166666666668vw,1180px)
+                        height: 1px
+                        background-color: #FCEE03
+                        margin-top: $sixteenclamp
+
+                .contacts-main-content
+                    width: 100%
+                    height: auto
+                    display: flex
+                    align-items: flex-start
+                    justify-content: space-between
+                    margin-top: clamp(50px,5.208333333333333vw,200px)
+                    margin-bottom: clamp( 61px,6.354166666666667vw,244px)
+
+                    .contacts-content
+                        display: flex
+                        flex-direction: column
+
+                        .section-heading, .kz-section-heading
+                            width: clamp(202px,42.083333333333336vw,1616px)
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: clamp(8.75px,1.8229166666666667vw,70px)
+                            color: #FCEE03
+                            font-size: clamp(20px,2.0833333333333335vw,80px)
+
+                        .kz-section-heading
+                            font-family: 'Roboto Condensed'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: clamp(22px,2.2916666666666665vw,88px)
+
+                        .section-paragraph, .kz-section-paragraph
+                            width: clamp(316.5px,32.96875vw,1266px)
+                            font-family: 'Unbounded'
+                            font-style: normal
+                            font-weight: 400
+                            font-size: clamp(12.5px,1.3020833333333333vw,50px)
+                            color: white
+                            margin-top: clamp(16px,1.6666666666666667vw,64px)
+
+                            .section-link
+                                color: #FCEE03
+                                font-weight: 600 !important
+
+                        .kz-section-paragraph
+                            font-family: 'Raleway'
+                            font-style: normal
+                            font-weight: 400
+
+                    .form
+                        width: auto
+                        height: auto
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+
+                        input
+                            width: clamp(266.5px,27.760416666666668vw,1066px)
+                            height: clamp(24px,2.5vw,96px)
+                            background-color: #FFFFFF
+                            font-family: 'Raleway'
+                            font-style: normal
+                            font-weight: 400
+                            font-size: clamp(10px,1.0416666666666667vw,40px)
+                            color: #1e1e1e
+                            cursor: pointer
+                            border: 2px solid $red
+                            border-radius: 4px
+                            padding-left: 16px
+                            &:focus
+                                outline: none
+                                border: 2px solid $main_blue
+
+                        input::placeholder
+                            font-family: 'Gothic A1', sans-serif
+                            font-style: normal
+                            font-weight: 500
+                            font-size: clamp(10px,1.0416666666666667vw,40px)
+                            color: #1e1e1e
+
+                        .phone-input, .email-input, .city-input
+                            margin-top: $thirtytwoclamp
+
+                        .submit-button
+                            width: clamp(221.5px,23.072916666666668vw,886px)
+                            height: clamp(29px,3.0208333333333335vw,116px)
+                            font-family: 'Roboto Condensed'
+                            font-style: normal
+                            font-weight: 700
+                            font-size: clamp(17px,1.5364583333333333vw,70px)
+                            display: flex
+                            align-items: center
+                            justify-content: center
+                            border-radius: 66px
+                            background-color: #FFF200
+                            margin-top: $sixtyfourclamp
+                            color: #022B6B
+                            &:hover
+                                background-color: #EADF02
+
+@media screen  and (max-width: 448px)
+
+    .modal
+        width: clamp(150px,70.09345794392523vw,600px) !important
+        height: clamp(100px,46.728971962616825vw,400px) !important
+        display: flex !important
+
+        .popup-heading, .kz-popup-heading
+            width: clamp(125px,58.41121495327103vw,500px)
+            text-align: center
+            font-size: clamp(9.5px,4.4392523364485985vw,38px) !important
+
+        .popup-paragraph
+            width: clamp(125px,58.41121495327103vw,500px) !important
+
+    .contacts
+        width: 100%
+        height: auto
+        display: flex
+        flex-direction: column
+
+        .contacts-container
+            width: 86.45833333333333%
+            height: auto
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            margin: auto
+
+            .contact-arrow
+                display: none !important
+
+            .contacts-heading-container
+                width: auto
+                height: auto
+                display: flex
+                align-items: center
+                flex-direction: column
+                margin-top: clamp(40px,22.22222222222222vw,160px) !important
+
+                .contacts-heading, .kz-contacts-heading
+                    text-align: center !important
+                    font-size: clamp(17px,7.94392523364486vw,68px) !important
+
+                .separator
+                    width: clamp(295px,30.729166666666668vw,1180px)
+                    height: 1px
+                    background-color: $main_blue
+                    margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+
+            .contacts-main-content
+                width: 100%
+                height: auto
+                display: flex
+                align-items: center !important
+                justify-content: center !important
+                flex-direction: column !important
+                margin: auto
+                margin-top: clamp(50px,5.208333333333333vw,200px)
+                margin-bottom: clamp( 61px,6.354166666666667vw,244px)
+
+                .contacts-content
+                    display: flex
+                    align-items: center !important
+                    flex-direction: column
+
+                    .section-heading, .kz-section-heading
+                        width: auto !important
+                        font-style: normal
+                        text-align: center !important
+                        font-size: clamp(16px,7.4766355140186915vw,64px) !important
+
+                    .section-paragraph, .kz-section-paragraph
+                        width: clamp(165.5px,77.33644859813084vw,662px) !important
+                        font-family: 'Raleway'
+                        font-style: normal
+                        font-weight: 400
+                        text-align: center
+                        font-size: clamp(11.5px,5.373831775700935vw,46px) !important
+                        color: #1e1e1e
+                        margin-right: 0px !important
+                        margin-top: $sixtyfourclamp !important
+
+                .form
+                    width: auto
+                    height: auto
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    margin-top: clamp(16px,7.4766355140186915vw,64px) !important
+
+                    input
+                        width: clamp(180px,84.11214953271028vw,720px) !important
+                        height: clamp(24px,11.214953271028037vw,96px) !important
+                        background-color: rgba(210, 49, 39, 0.1)
+                        font-family: 'Gothic A1', sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: clamp(9px,4.205607476635514vw,36px) !important
+                        color: #D23127
+                        cursor: pointer
+                        border: 2px solid $red
+                        border-radius: 4px
+                        padding-left: 16px
+                        &:focus
+                            outline: none
+                            border: 2px solid $main_blue
+
+                    input::placeholder
+                        font-family: 'Gothic A1', sans-serif
+                        font-style: normal
+                        font-weight: 500
+                        font-size: clamp(9px,4.205607476635514vw,36px) !important
+                        color: #D23127
+
+                    .phone-input, .email-input, .city-input
+                        margin-top: $thirtytwoclamp
+
+                    .submit-button
+                        width: clamp(180px,84.11214953271028vw,720px) !important
+                        height: clamp(30px,14.018691588785046vw,120px) !important
+                        font-family: 'FTY STRATEGYCIDE NCV'
+                        font-style: normal
+                        font-weight: 400
+                        font-size: clamp(14.5px,6.775700934579439vw,58px) !important
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        border-radius: 4px
+                        background-color: $red
+                        margin-top: $sixtyfourclamp
+                        color: $background
+                        &:hover
+                            background-color: #B52B21
+
+@keyframes anvil
+    0%
+        transform: scale(1) translateY(0px)
+        opacity: 0
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0)
+
+    1%
+        transform: scale(0.96) translateY(10px)
+        opacity: 0
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0)
+
+    100%
+        transform: scale(1) translateY(0px)
+        opacity: 1
+        box-shadow: 0 0 500px rgba(241, 241, 241, 0)

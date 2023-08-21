@@ -1,0 +1,158 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+    body
+        width: 100%
+        height: auto
+        font-family: 'Raleway', sans-serif
+        font-display: fallback
+        overflow-x: hidden !important
+
+        .document-screen
+            width: 100%
+            height: auto
+            display: flex
+            margin: auto
+            background-color: #022B6B
+            flex-direction: column
+
+            .document-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+
+                .document-screen-content
+                    width: 100%
+                    display: flex
+                    flex-direction: column
+
+                    .document-heading-container
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        margin: auto
+
+                        .document-heading
+                            font-family: 'Roboto Condensed'
+                            font-style: normal
+                            font-weight: 700
+                            text-align: center
+                            font-size: clamp(22.5px,2.34375vw,90px)
+                            text-transform: uppercase
+                            color: #FFF200
+
+                        .separator
+                            width: clamp(174.5px,18.177083333333332vw,698px)
+                            height: 1px
+                            margin-top: $sixteenclamp
+                            background-color: #FFF200
+
+                    .documents
+                        width: 100%
+                        margin: auto
+                        display: flex
+                        justify-content: center
+                        margin-top: clamp(50px,5.208333333333333vw,200px)
+                        margin-bottom: clamp(50px,5.208333333333333vw,200px)
+
+                        .document-photo, .document-photo-2
+                            cursor: pointer
+                            width: clamp(250px,26.041666666666668vw,1000px)
+                            height: clamp(399px,41.5625vw,1596px)
+                            transition: 0.3s all
+                            &:hover
+                                box-shadow: 0px 17px 24px rgba(0, 0, 0, 0.25)
+
+                        .document-photo-2
+                            margin-left: $sixtyfourclamp
+
+@media screen  and (max-width: 448px)
+
+    *
+        margin: 0
+        padding: 0
+
+    body
+        width: 100%
+        height: auto
+        font-family: 'Raleway', sans-serif
+        background-color: $background !important
+        font-display: fallback
+        overflow-x: hidden !important
+
+        .document-screen
+            width: 100%
+            height: auto
+            display: flex
+            margin: auto
+            background-color: #022B6B
+            flex-direction: column
+
+            .document-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: auto
+                margin-top: clamp( 50px,5.208333333333333vw,200px)
+
+                .document-screen-content
+                    width: 100%
+                    display: flex
+
+                    .document-heading-container
+                        display: flex !important
+                        flex-direction: column !important
+
+                        .document-heading
+                            font-family: 'Roboto Condensed' !important
+                            font-style: normal !important
+                            font-weight: 700 !important
+                            font-size: clamp(18px,8.411214953271028vw,72px) !important
+                            text-transform: uppercase !important
+                            color: #FFF200 !important
+                            text-align: center !important
+
+                    .documents
+                        width: auto
+                        display: flex !important
+                        flex-direction: column !important
+                        align-items: center !important
+
+                        .document-photo, .document-photo-2
+                            width: 100%
+                            height: 100%
+                            margin-top: clamp(16px,8.205128205128204vw,64px) !important
+
+                        .document-photo-2
+                            margin-left: 0

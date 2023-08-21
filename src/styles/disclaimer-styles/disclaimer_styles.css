@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  width: 100%;
+  height: auto;
+  font-display: fallback;
+  overflow-x: hidden !important;
+}
+* body .disclaimer-screen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  background-color: white;
+  flex-direction: column;
+}
+* body .disclaimer-screen .disclaimer-container {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+  justify-content: space-between;
+}
+* body .disclaimer-screen .disclaimer-container .disclaimer-heading-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+* body .disclaimer-screen .disclaimer-container .disclaimer-heading-container .disclaimer-heading, * body .disclaimer-screen .disclaimer-container .disclaimer-heading-container .kz-disclaimer-heading {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(19px, 1.9791666667vw, 76px);
+  text-transform: uppercase;
+  color: #00346E;
+}
+* body .disclaimer-screen .disclaimer-container .disclaimer-heading-container .kz-disclaimer-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 2.5vw, 96px);
+}
+* body .disclaimer-screen .disclaimer-container .disclaimer-heading-container .separator {
+  width: clamp(174.5px, 18.1770833333vw, 698px);
+  height: 1px;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+  background-color: #00346E;
+}
+* body .disclaimer-screen .disclaimer-container .disclaimer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+* body .disclaimer-screen .disclaimer-container .disclaimer-content .disclaimer-paragraph, * body .disclaimer-screen .disclaimer-container .disclaimer-content .kz-disclaimer-paragraph {
+  width: clamp(566px, 58.9583333333vw, 2264px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 152%;
+  text-align: center;
+  font-size: clamp(13px, 1.3541666667vw, 52px);
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+}
+* body .disclaimer-screen .disclaimer-container .disclaimer-content .kz-disclaimer-paragraph {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+}
+* body .disclaimer-screen .disclaimer-container .disclaimer-content .disclaimer-bold-paragraph, * body .disclaimer-screen .disclaimer-container .disclaimer-content .kz-disclaimer-bold-paragraph {
+  width: clamp(450px, 46.875vw, 1800px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 152%;
+  font-size: clamp(18px, 1.875vw, 72px);
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  text-align: center;
+  color: #00346E;
+}
+* body .disclaimer-screen .disclaimer-container .disclaimer-content .kz-disclaimer-bold-paragraph {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+}
+* body .disclaimer-screen .disclaimer-container .disclaimer-content .disclaimer-icon {
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  margin-bottom: clamp(50px, 5.2083333333vw, 200px);
+}
+
+@media screen and (max-width: 448px) {
+  .disclaimer-screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+  .disclaimer-screen .arrow-blue {
+    display: none !important;
+  }
+  .disclaimer-screen .disclaimer-container {
+    width: 86.4583333333%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .disclaimer-screen .disclaimer-container .disclaimer-heading, .disclaimer-screen .disclaimer-container .kz-disclaimer-heading {
+    width: clamp(50px, 5.2083333333vw, 200px) !important;
+    text-align: center !important;
+    margin: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+  }
+  .disclaimer-screen .disclaimer-container .disclaimer-content .disclaimer-paragraph, .disclaimer-screen .disclaimer-container .disclaimer-content .kz-disclaimer-paragraph {
+    width: clamp(180px, 84.1121495327vw, 720px) !important;
+    height: auto;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-size: clamp(11px, 5.3140096618vw, 44px) !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    font-weight: 300 !important;
+    margin: auto;
+    text-align: center;
+  }
+  .disclaimer-screen .disclaimer-container .disclaimer-content .disclaimer-bold-paragraph, .disclaimer-screen .disclaimer-container .disclaimer-content .kz-disclaimer-bold-paragraph {
+    width: clamp(200px, 96.6183574879vw, 800px) !important;
+    margin-top: clamp(16px, 7.729468599vw, 64px) !important;
+    font-weight: 500 !important;
+    font-size: clamp(13px, 6.2801932367vw, 52px) !important;
+  }
+  .disclaimer-screen .disclaimer-container .disclaimer-content .disclaimer-icon {
+    width: clamp(125px, 60.38647343vw, 500px) !important;
+    height: clamp(125px, 60.38647343vw, 500px) !important;
+    margin-top: clamp(16px, 7.729468599vw, 64px) !important;
+  }
+}/*# sourceMappingURL=disclaimer_styles.css.map */

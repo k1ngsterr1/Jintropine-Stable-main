@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* body .more-info-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #022B6B;
+  margin: auto;
+}
+* body .more-info-page .more-info-container {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+  justify-content: space-between;
+  margin-bottom: clamp(100px, 10.4166666667vw, 400px);
+}
+* body .more-info-page .paragraph-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+* body .more-info-page .paragraph-container .info-paragraph {
+  width: clamp(496.5px, 51.71875vw, 1986px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  color: #FFF200;
+  font-weight: 500;
+  font-size: 19px;
+}
+* body .more-info-page .paragraph-container .section {
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+* body .more-info-page .buttons-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+}
+* body .more-info-page .buttons-container .go-back-button {
+  width: clamp(179px, 18.6458333333vw, 716px);
+  height: clamp(32px, 3.3333333333vw, 128px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(10.5px, 0.9375vw, 42px);
+  color: #022B6B;
+  background-color: #FFF200;
+  border-radius: 60px;
+  transition: 0.3s all;
+}
+* body .more-info-page .buttons-container .go-back-button:hover {
+  background-color: #EDE100;
+}
+* body .more-info-page .buttons-container .main-button {
+  width: clamp(179px, 18.6458333333vw, 716px);
+  height: clamp(32px, 3.3333333333vw, 128px);
+  text-decoration: none !important;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(10.5px, 0.9375vw, 42px);
+  color: #022B6B;
+  border-radius: 60px;
+  background-color: #FFF200;
+  margin-left: clamp(16px, 1.6666666667vw, 64px);
+  transition: 0.3s all;
+}
+* body .more-info-page .buttons-container .main-button:hover {
+  background-color: #EDE100;
+}
+* body .more-info-page .buttons-container .main-button .telegram-icon {
+  margin-right: clamp(6px, 0.625vw, 24px);
+}
+* body .more-info-page .more-info-img {
+  width: clamp(600px, 53.5714285714vw, 2400px);
+  height: auto;
+  left: clamp(650px, 58.0357142857vw, 2600px);
+  top: clamp(225px, 20.0892857143vw, 900px);
+  position: absolute;
+}
+
+@media screen and (max-width: 448px) {
+  .more-info-page {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+  }
+  .more-info-page .separator {
+    display: none;
+  }
+  .more-info-page .paragraph-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .more-info-page .paragraph-container .info-paragraph {
+    width: clamp(182px, 85.046728972vw, 728px) !important;
+    font-weight: 500 !important;
+    text-align: center;
+    font-size: 16px !important;
+  }
+  .more-info-page .paragraph-container .buttons-container {
+    display: flex !important;
+    margin: auto !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    margin-top: clamp(32px, 14.953271028vw, 128px) !important;
+  }
+  .more-info-page .paragraph-container .buttons-container .go-back-button, .more-info-page .paragraph-container .buttons-container .main-button {
+    width: clamp(150px, 70.0934579439vw, 600px) !important;
+    margin-top: clamp(8px, 3.738317757vw, 32px) !important;
+    height: clamp(27.5px, 12.8504672897vw, 110px) !important;
+    font-size: clamp(8px, 3.738317757vw, 32px) !important;
+    margin-left: 0 !important;
+  }
+}/*# sourceMappingURL=more-info.css.map */

@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* body .in-stock-screen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  background-color: #022B6B;
+  flex-direction: column;
+}
+* body .in-stock-screen .deco-picture {
+  position: absolute;
+  width: clamp(341.62px, 35.5854166667vw, 1366.48px);
+  height: clamp(340.37px, 35.4552083333vw, 1361.48px);
+  left: clamp(0.365px, 0.0380208333vw, 1.46px);
+  top: clamp(2998px, 312.2916666667vw, 11992px);
+  z-index: 0;
+}
+* body .in-stock-screen .arrow {
+  display: none !important;
+}
+* body .in-stock-screen .in-stock-container {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+  justify-content: space-between;
+}
+* body .in-stock-screen .in-stock-container .instock-p-container {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+* body .in-stock-screen .in-stock-container .instock-p-container .main-button, * body .in-stock-screen .in-stock-container .instock-p-container .kz-main-button {
+  width: clamp(203.5px, 21.1979166667vw, 814px);
+  height: clamp(32px, 3.3333333333vw, 128px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(11px, 1.1458333333vw, 44px);
+  text-decoration: none !important;
+  background-color: #FCEE03;
+  display: flex;
+  align-items: center;
+  border-radius: 52px;
+  justify-content: center;
+  border: none;
+  color: #022B6B;
+  margin-top: clamp(22px, 2.2916666667vw, 88px);
+}
+* body .in-stock-screen .in-stock-container .instock-p-container .main-button:hover, * body .in-stock-screen .in-stock-container .instock-p-container .kz-main-button:hover {
+  background-color: #EADF02;
+}
+* body .in-stock-screen .in-stock-container .instock-p-container .kz-main-button {
+  font-family: "Roboto Condensed" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+}
+* body .in-stock-screen .in-stock-container .instock-p-container .jintropine-paragraph, * body .in-stock-screen .in-stock-container .instock-p-container .kz-jintropine-paragraph {
+  width: clamp(420px, 43.75vw, 1680px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(11.5px, 1.1979166667vw, 46px);
+  line-height: 152%;
+  text-align: right;
+  color: white;
+}
+* body .in-stock-screen .in-stock-container .instock-p-container .kz-jintropine-paragraph {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+}
+* body .in-stock-screen .in-stock-container .in-stock-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body .in-stock-screen .in-stock-container .in-stock-heading-container .in-stock-heading, * body .in-stock-screen .in-stock-container .in-stock-heading-container .kz-in-stock-heading {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(19px, 1.9791666667vw, 76px);
+  text-transform: uppercase;
+  color: #FFF200;
+}
+* body .in-stock-screen .in-stock-container .in-stock-heading-container .kz-in-stock-heading {
+  font-family: "Roboto Condensed" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 2.5vw, 96px);
+}
+* body .in-stock-screen .in-stock-container .in-stock-heading-container .separator {
+  width: clamp(174.5px, 18.1770833333vw, 698px);
+  height: 1px;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+  background-color: #FFF200;
+}
+* body .in-stock-screen .in-stock-container .in-stock-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+  margin-bottom: clamp(50px, 5.2083333333vw, 200px);
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card {
+  width: clamp(210px, 21.875vw, 840px);
+  height: auto;
+  background: #033585;
+  border-radius: 15px;
+  display: flex;
+  z-index: 10;
+  flex-direction: column;
+  align-items: center;
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .jintropine-image {
+  width: clamp(200px, 20.8333333333vw, 800px);
+  height: clamp(200px, 20.8333333333vw, 820px);
+  display: flex;
+  margin-left: clamp(10px, 1.0416666667vw, 40px);
+  margin-top: clamp(7.5px, 0.78125vw, 30px);
+  border-radius: 10px;
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin {
+  margin-left: clamp(7.5px, 0.78125vw, 30px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: clamp(25px, 2.6041666667vw, 100px);
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .growth-hormone, * body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .kz-growth-hormone {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(9px, 0.9375vw, 36px);
+  margin-top: clamp(10.5px, 1.09375vw, 42px);
+  color: rgba(245, 248, 255, 0.6);
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .kz-growth-hormone {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .card-heading, * body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .kz-card-heading {
+  text-align: center;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(11px, 1.1458333333vw, 44px);
+  line-height: 138.4%;
+  text-transform: capitalize;
+  margin-top: clamp(4px, 0.4166666667vw, 16px);
+  color: #FFF200;
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .kz-card-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(14px, 1.4583333333vw, 56px);
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .p-description, * body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .kz-p-description {
+  width: clamp(177.5px, 18.4895833333vw, 710px);
+  font-family: "Unbounded";
+  font-style: normal;
+  text-align: center;
+  font-weight: 300;
+  line-height: 152%;
+  font-size: clamp(7.5px, 0.78125vw, 30px);
+  color: #FFFFFF;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .kz-p-description {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(8px, 0.8333333333vw, 32px);
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .in-stock {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(9px, 0.9375vw, 36px);
+  color: #FCEE03;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .price {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(16.5px, 1.71875vw, 66px);
+  color: #FCEE03;
+  margin: auto;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .stock-button {
+  width: clamp(170.74px, 17.7854166667vw, 682.96px);
+  height: clamp(27.365px, 2.8505208333vw, 109.46px);
+  background-color: #FCEE03;
+  display: flex;
+  align-items: center;
+  text-decoration: none !important;
+  justify-content: center;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(11px, 1.1458333333vw, 44px);
+  color: #022B6B;
+  margin: auto;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+  border-radius: 50px;
+}
+* body .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .stock-button:hover {
+  background-color: #EADF02;
+}
+
+@media screen and (max-width: 448px) {
+  .in-stock-screen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    background-color: #F4F5F8;
+    flex-direction: column;
+  }
+  .in-stock-screen .deco-picture {
+    display: none !important;
+  }
+  .in-stock-screen .arrow {
+    display: none !important;
+  }
+  .in-stock-screen .in-stock-container {
+    width: 86.4583333333%;
+    height: auto;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: auto;
+    margin-top: clamp(50px, 5.2083333333vw, 200px);
+    justify-content: space-between;
+    margin-top: clamp(50px, 5.2083333333vw, 200px);
+    margin-bottom: clamp(50px, 5.2083333333vw, 200px);
+  }
+  .in-stock-screen .in-stock-container .instock-p-container {
+    display: flex !important;
+    align-items: center !important;
+  }
+  .in-stock-screen .in-stock-container .instock-p-container .main-button, .in-stock-screen .in-stock-container .instock-p-container .kz-main-button {
+    width: clamp(178.5px, 83.4112149533vw, 714px) !important;
+    font-size: clamp(10.5px, 4.9065420561vw, 42px) !important;
+    height: clamp(34px, 15.8878504673vw, 136px) !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+  .in-stock-screen .in-stock-container .instock-p-container .kz-main-button {
+    font-size: 25px !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-heading-container {
+    width: 100%;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-heading-container .in-stock-heading, .in-stock-screen .in-stock-container .in-stock-heading-container .kz-in-stock-heading {
+    font-family: "Unbounded" !important;
+    font-style: normal !important;
+    color: #FFF200 !important;
+    font-weight: 700 !important;
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content .jintropine-card {
+    width: clamp(170px, 87.1794871795vw, 680px) !important;
+    height: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .jintropine-image {
+    width: clamp(110px, 51.4018691589vw, 440px) !important;
+    height: clamp(100px, 46.7289719626vw, 400px) !important;
+    margin: auto;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+    margin-top: clamp(4px, 2.0512820513vw, 16px) !important;
+    margin-bottom: 0 !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin {
+    margin-top: 0px !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .growth-hormone, .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .kz-growth-hormone {
+    font-size: clamp(6px, 3.0769230769vw, 24px) !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .card-heading, .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .kz-card-heading {
+    font-size: clamp(11px, 5.641025641vw, 44px) !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .p-description, .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .kz-p-description {
+    width: clamp(150px, 70.0934579439vw, 600px) !important;
+    font-size: clamp(7px, 3.5897435897vw, 28px) !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .in-stock, .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .kz-in-stock {
+    font-size: clamp(8px, 4.1025641026vw, 32px) !important;
+    margin-top: clamp(8px, 4.1025641026vw, 32px) !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .price {
+    font-size: clamp(13px, 6.6666666667vw, 52px) !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content .jintropine-card .card-content-jin .stock-button {
+    width: 80% !important;
+    height: clamp(20px, 10.2564102564vw, 80px) !important;
+    margin-top: clamp(8px, 4.1025641026vw, 32px) !important;
+    font-size: clamp(8.5px, 4.358974359vw, 34px) !important;
+  }
+  .in-stock-screen .in-stock-container .in-stock-content .jintropine-paragraph, .in-stock-screen .in-stock-container .in-stock-content .kz-jintropine-paragraph {
+    width: clamp(170px, 87.1794871795vw, 680px) !important;
+    text-align: center !important;
+    margin-top: clamp(16px, 8.2051282051vw, 64px) !important;
+    font-size: clamp(8.25px, 4.2307692308vw, 33px) !important;
+    line-height: 138% !important;
+  }
+}/*# sourceMappingURL=instock_styles.css.map */

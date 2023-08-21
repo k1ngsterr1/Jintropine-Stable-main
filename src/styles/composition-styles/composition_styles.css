@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  width: 100%;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  font-display: fallback;
+  overflow-x: hidden !important;
+}
+* body .composition-screen {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  background-color: #022B6B;
+  flex-direction: column;
+}
+* body .composition-screen .composition-container {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+  justify-content: space-between;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+  margin-bottom: clamp(50px, 5.2083333333vw, 200px);
+}
+* body .composition-screen .composition-container .heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body .composition-screen .composition-container .heading-container .composition-heading, * body .composition-screen .composition-container .heading-container .kz-composition-heading {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(19px, 1.9791666667vw, 76px);
+  text-transform: uppercase;
+  color: #FFF200;
+}
+* body .composition-screen .composition-container .heading-container .kz-composition-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 2.5vw, 96px);
+}
+* body .composition-screen .composition-container .heading-container .separator {
+  width: clamp(174.5px, 18.1770833333vw, 698px);
+  height: 1px;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+  background-color: #FFF200;
+}
+* body .composition-screen .composition-container .composition-card-container {
+  display: flex;
+  flex-direction: column;
+  width: clamp(653px, 68.0208333333vw, 2612px);
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+}
+* body .composition-screen .composition-container .composition-card-container .column-one, * body .composition-screen .composition-container .composition-card-container .column-two {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+* body .composition-screen .composition-container .composition-card-container .column-one .composition-card-content, * body .composition-screen .composition-container .composition-card-container .column-two .composition-card-content {
+  display: flex;
+  border: 2px solid red;
+  width: clamp(304px, 31.6666666667vw, 1216px);
+  height: clamp(96.5px, 10.0520833333vw, 386px);
+  flex-direction: column;
+  background: #022B6B;
+  border: 2px solid #0340A1;
+  border-radius: 15px;
+}
+* body .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .card-heading-container, * body .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .card-heading-container {
+  display: flex;
+  align-items: center;
+  margin-left: clamp(12.5px, 1.3020833333vw, 50px);
+  margin-top: clamp(10px, 1.0416666667vw, 40px);
+}
+* body .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .card-heading-container .card-icon, * body .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .card-heading-container .card-icon {
+  width: clamp(2.5px, 0.2604166667vw, 10px);
+  height: clamp(17px, 1.7708333333vw, 68px);
+}
+* body .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .card-heading-container .card-composition-header, * body .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .card-heading-container .kz-card-composition-header, * body .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .card-heading-container .card-composition-header, * body .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .card-heading-container .kz-card-composition-header {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(13.5px, 1.40625vw, 54px);
+  color: #FCEE03;
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+* body .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .card-heading-container .kz-card-composition-header, * body .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .card-heading-container .kz-card-composition-header {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(16.5px, 1.71875vw, 66px);
+}
+* body .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .card-composition-paragraph, * body .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .kz-card-composition-paragraph, * body .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .card-composition-paragraph, * body .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .kz-card-composition-paragraph {
+  width: clamp(250px, 26.0416666667vw, 1000px);
+  margin-top: clamp(10.5px, 1.09375vw, 42px);
+  margin-left: clamp(12.5px, 1.3020833333vw, 50px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(9px, 0.9375vw, 36px);
+  line-height: 138.4%;
+  color: white;
+}
+* body .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .kz-card-composition-paragraph, * body .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .kz-card-composition-paragraph {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(10.5px, 1.09375vw, 42px);
+}
+* body .composition-screen .composition-container .composition-card-container .column-two {
+  margin-top: clamp(19.5px, 2.03125vw, 78px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l {
+  display: flex;
+  border: 2px solid red;
+  width: 100%;
+  height: clamp(107px, 11.1458333333vw, 428px);
+  flex-direction: column;
+  background-color: #022B6B;
+  border: 2px solid #0340A1;
+  border-radius: 15px;
+  margin-top: clamp(19.5px, 2.03125vw, 78px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l .card-heading-container-l {
+  display: flex;
+  align-items: center;
+  margin-left: clamp(12.5px, 1.3020833333vw, 50px);
+  margin-top: clamp(10px, 1.0416666667vw, 40px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l .card-heading-container-l .card-icon {
+  width: clamp(2.5px, 0.2604166667vw, 10px);
+  height: clamp(17px, 1.7708333333vw, 68px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l .card-heading-container-l .card-composition-header-l, * body .composition-screen .composition-container .composition-card-container .composition-card-content-l .card-heading-container-l .kz-card-composition-header-l {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(13.5px, 1.40625vw, 54px);
+  color: #FCEE03;
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l .card-heading-container-l .kz-card-composition-header-l {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 400;
+  font-size: clamp(16.5px, 1.71875vw, 66px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l .card-composition-paragraph-l, * body .composition-screen .composition-container .composition-card-container .composition-card-content-l .kz-card-composition-paragraph-l {
+  width: clamp(600px, 62.5vw, 2400px);
+  margin-top: clamp(10.5px, 1.09375vw, 42px);
+  margin-left: clamp(12.5px, 1.3020833333vw, 50px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  font-size: clamp(9px, 0.9375vw, 36px);
+  line-height: 138.4%;
+  color: #F5F8FF;
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l .kz-card-composition-paragraph-l {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: clamp(10.5px, 1.09375vw, 42px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l .bold-text, * body .composition-screen .composition-container .composition-card-container .composition-card-content-l .kz-bold-text {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(10.25px, 1.0677083333vw, 41px);
+  color: #F5F8FF;
+  line-height: 138.4%;
+  margin-left: clamp(12.5px, 1.3020833333vw, 50px);
+  margin-top: clamp(10px, 1.0416666667vw, 40px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l .kz-bold-text {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(14px, 1.4583333333vw, 56px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l-bl {
+  display: flex;
+  border: 2px solid red;
+  width: 100%;
+  height: clamp(107px, 11.1458333333vw, 428px);
+  flex-direction: column;
+  background: #FCEE03;
+  border: 2px solid rgba(88, 142, 247, 0.1);
+  border-radius: 15px;
+  margin-top: clamp(19.5px, 2.03125vw, 78px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l-bl .card-heading-container-l-bl {
+  display: flex;
+  align-items: center;
+  margin-left: clamp(12.5px, 1.3020833333vw, 50px);
+  margin-top: clamp(10px, 1.0416666667vw, 40px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l-bl .card-heading-container-l-bl .card-icon {
+  width: clamp(2.5px, 0.2604166667vw, 10px);
+  height: clamp(17px, 1.7708333333vw, 68px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l-bl .card-heading-container-l-bl .card-composition-header-l-bl, * body .composition-screen .composition-container .composition-card-container .composition-card-content-l-bl .card-heading-container-l-bl .kz-card-composition-header-l-bl {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(17px, 1.7708333333vw, 68px);
+  color: #022B6B;
+  margin-left: clamp(8px, 0.8333333333vw, 32px);
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l-bl .card-heading-container-l-bl .kz-card-composition-header-l-bl {
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: 500;
+}
+* body .composition-screen .composition-container .composition-card-container .composition-card-content-l-bl .card-composition-paragraph-l-bl {
+  width: clamp(600px, 62.5vw, 2400px);
+  margin-top: clamp(10.5px, 1.09375vw, 42px);
+  margin-left: clamp(12.5px, 1.3020833333vw, 50px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(9px, 0.9375vw, 36px);
+  line-height: 138.4%;
+  color: #022B6B;
+}
+
+@media screen and (max-width: 448px) {
+  .composition-screen {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: auto;
+    background-color: #F4F5F8;
+    flex-direction: column;
+  }
+  .composition-screen .composition-container {
+    width: 86.4583333333%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: clamp(50px, 5.2083333333vw, 200px);
+    justify-content: space-between;
+    margin-top: clamp(50px, 5.2083333333vw, 200px);
+    margin-bottom: clamp(50px, 5.2083333333vw, 200px);
+  }
+  .composition-screen .composition-container .heading-container {
+    width: 100%;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+  .composition-screen .composition-container .heading-container .composition-heading, .composition-screen .composition-container .heading-container .kz-composition-heading {
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+  }
+  .composition-screen .composition-container .composition-card-container {
+    width: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .composition-screen .composition-container .composition-card-container .column-one {
+    width: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .composition-screen .composition-container .composition-card-container .column-one .composition-card-content {
+    width: clamp(180px, 92.3076923077vw, 720px) !important;
+    height: clamp(60px, 28.0373831776vw, 240px) !important;
+    margin-top: clamp(8px, 4.1025641026vw, 32px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .card-composition-header, .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .kz-card-composition-header {
+    font-size: clamp(10.1px, 5.1794871795vw, 40.4px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .card-composition-paragraph, .composition-screen .composition-container .composition-card-container .column-one .composition-card-content .kz-card-composition-paragraph {
+    width: clamp(175px, 81.7757009346vw, 700px) !important;
+    font-size: clamp(6.75px, 3.1542056075vw, 27px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .column-two {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .composition-screen .composition-container .composition-card-container .column-two .composition-card-content {
+    width: clamp(180px, 92.3076923077vw, 720px) !important;
+    height: clamp(85px, 39.7196261682vw, 340px) !important;
+    margin-top: clamp(8px, 4.1025641026vw, 32px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .card-composition-header, .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .kz-card-composition-header {
+    font-size: clamp(10.1px, 5.1794871795vw, 40.4px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .card-composition-paragraph, .composition-screen .composition-container .composition-card-container .column-two .composition-card-content .kz-card-composition-paragraph {
+    width: clamp(165px, 84.6153846154vw, 660px) !important;
+    font-size: clamp(6.5px, 3.3333333333vw, 26px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .row-one {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .composition-screen .composition-container .composition-card-container .row-one .composition-card-content-l {
+    width: clamp(180px, 92.3076923077vw, 720px) !important;
+    height: clamp(120px, 56.0747663551vw, 480px) !important;
+    margin-top: clamp(8px, 4.1025641026vw, 32px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .row-one .composition-card-content-l .card-composition-header-l, .composition-screen .composition-container .composition-card-container .row-one .composition-card-content-l .kz-card-composition-header-l {
+    font-size: clamp(10.1px, 5.1794871795vw, 40.4px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .row-one .composition-card-content-l .card-composition-paragraph-l, .composition-screen .composition-container .composition-card-container .row-one .composition-card-content-l .kz-card-composition-paragraph-l {
+    width: clamp(165px, 84.6153846154vw, 660px) !important;
+    font-size: clamp(6.5px, 3.3333333333vw, 26px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .row-one .composition-card-content-l .bold-text {
+    margin-top: clamp(8px, 3.738317757vw, 32px);
+    font-size: clamp(6.75px, 3.1542056075vw, 27px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .row-two {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .composition-screen .composition-container .composition-card-container .row-two .composition-card-content-l-bl {
+    width: clamp(180px, 92.3076923077vw, 720px) !important;
+    height: clamp(120px, 56.0747663551vw, 480px) !important;
+    margin-top: clamp(8px, 4.1025641026vw, 32px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .row-two .composition-card-content-l-bl .card-composition-header-l-bl, .composition-screen .composition-container .composition-card-container .row-two .composition-card-content-l-bl .kz-card-composition-header-l-bl {
+    font-size: clamp(10.1px, 5.1794871795vw, 40.4px) !important;
+  }
+  .composition-screen .composition-container .composition-card-container .row-two .composition-card-content-l-bl .card-composition-paragraph-l-bl, .composition-screen .composition-container .composition-card-container .row-two .composition-card-content-l-bl .kz-card-composition-paragraph-l-bl {
+    width: clamp(165px, 84.6153846154vw, 660px) !important;
+    font-size: clamp(6.5px, 3.3333333333vw, 26px) !important;
+  }
+}/*# sourceMappingURL=composition_styles.css.map */

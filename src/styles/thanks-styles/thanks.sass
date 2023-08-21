@@ -1,0 +1,77 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    body
+
+        .thanks-page
+            width: 100%
+            height: 100vh
+            display: flex
+            background-color: $main_blue
+            flex-direction: column
+
+            .thanks-container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                margin: auto
+
+                .contact-arrow
+                    display: none !important
+
+                .thanks-text-container
+                    width: auto
+                    height: auto
+                    display: flex
+                    align-items: center
+                    flex-direction: column
+
+                    .thanks-heading
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        font-weight: 700
+                        text-align: center
+                        font-size: clamp(24px,2.5vw,96px)
+                        color: #FCEE03
+
+                    .thanks-paragraph
+                        font-family: 'Unbounded'
+                        font-style: normal
+                        color: white
+                        font-weight: 400
+                        text-align: center
+                        margin-top: $thirtytwoclamp
+
+                .thanks-button
+                    width: clamp(200px,20.833333333333332vw,800px)
+                    border-radius: 100px
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    color: $main_blue
+                    font-weight: 400
+                    background-color: #FCEE03
+                    height: $sixtyfourclamp
+                    margin-top: $sixtyfourclamp

@@ -1,0 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* html, * body {
+  width: 100%;
+  height: 100%;
+  font-family: "Unbounded", sans-serif;
+  font-display: fallback;
+  overflow-x: hidden !important;
+}
+* html button, * html a, * body button, * body a {
+  cursor: pointer;
+  transition: 0.3s all;
+  border: none;
+}
+* html .main-screen, * body .main-screen {
+  width: 100%;
+  height: auto;
+  background: #022B6B;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+}
+* html .main-screen .arrow-blue, * body .main-screen .arrow-blue {
+  position: absolute;
+  width: clamp(147.5px, 15.3645833333vw, 590px);
+  height: clamp(150px, 15.625vw, 600px);
+  left: clamp(418.115px, 43.5536458333vw, 1672.46px);
+  top: clamp(243.5px, 25.3645833333vw, 974px);
+}
+* html .main-screen .container-mobile, * body .main-screen .container-mobile {
+  display: none;
+}
+* html .main-screen .container, * body .main-screen .container {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  margin: auto;
+  margin-top: clamp(50px, 5.2083333333vw, 200px);
+  justify-content: space-between;
+}
+* html .main-screen .container .proto-photo, * body .main-screen .container .proto-photo {
+  width: clamp(533.5px, 55.5729166667vw, 2134px);
+  height: clamp(385px, 40.1041666667vw, 1540px);
+  position: sticky;
+  left: clamp(550px, 57.2916666667vw, 2200px);
+  margin-top: clamp(-45px, -4.6875vw, -180px);
+}
+* html .main-screen .container .proto-photo-phone, * body .main-screen .container .proto-photo-phone {
+  display: none;
+}
+* html .main-screen .container .main-heading, * html .main-screen .container .kz-main-heading, * body .main-screen .container .main-heading, * body .main-screen .container .kz-main-heading {
+  width: clamp(500px, 52.0833333333vw, 2000px);
+  height: clamp(80px, 8.3333333333vw, 320px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(32.5px, 3.3854166667vw, 130px);
+  color: white;
+}
+* html .main-screen .container .main-heading .hormone, * html .main-screen .container .kz-main-heading .hormone, * body .main-screen .container .main-heading .hormone, * body .main-screen .container .kz-main-heading .hormone {
+  color: #FCEE03;
+}
+* html .main-screen .container .kz-main-heading, * body .main-screen .container .kz-main-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(34px, 3.5416666667vw, 136px);
+}
+* html .main-screen .container .description, * html .main-screen .container .kz-description, * body .main-screen .container .description, * body .main-screen .container .kz-description {
+  width: clamp(323px, 33.6458333333vw, 1292px);
+  height: auto;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 152%;
+  font-size: clamp(9.5px, 0.9895833333vw, 38px);
+  margin-top: clamp(22px, 2.2916666667vw, 88px);
+  color: white;
+}
+* html .main-screen .container .kz-description, * body .main-screen .container .kz-description {
+  font-family: "Raleway" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: clamp(12px, 1.25vw, 48px) !important;
+}
+* html .main-screen .container .buttons, * body .main-screen .container .buttons {
+  width: auto;
+  height: auto;
+  display: flex;
+}
+* html .main-screen .container .buttons .main-button, * html .main-screen .container .buttons .kz-main-button, * body .main-screen .container .buttons .main-button, * body .main-screen .container .buttons .kz-main-button {
+  width: clamp(203.5px, 21.1979166667vw, 814px);
+  height: clamp(32px, 3.3333333333vw, 128px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(11px, 1.1458333333vw, 44px);
+  text-decoration: none !important;
+  background-color: #FCEE03;
+  display: flex;
+  align-items: center;
+  border-radius: 52px;
+  justify-content: center;
+  border: none;
+  color: #022B6B;
+  margin-top: clamp(22px, 2.2916666667vw, 88px);
+}
+* html .main-screen .container .buttons .main-button:hover, * html .main-screen .container .buttons .kz-main-button:hover, * body .main-screen .container .buttons .main-button:hover, * body .main-screen .container .buttons .kz-main-button:hover {
+  background-color: #EADF02;
+}
+* html .main-screen .container .buttons .main-button .telegram-icon, * html .main-screen .container .buttons .kz-main-button .telegram-icon, * body .main-screen .container .buttons .main-button .telegram-icon, * body .main-screen .container .buttons .kz-main-button .telegram-icon {
+  margin-right: clamp(6px, 0.625vw, 24px);
+}
+* html .main-screen .container .buttons .kz-main-button, * body .main-screen .container .buttons .kz-main-button {
+  font-family: "Roboto Condensed" !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  font-size: clamp(13px, 1.3541666667vw, 42px) !important;
+}
+* html .main-screen .phone-circle, * body .main-screen .phone-circle {
+  width: clamp(32px, 3.3333333333vw, 128px);
+  height: clamp(32px, 3.3333333333vw, 128px);
+  bottom: clamp(7.5px, 0.78125vw, 30px);
+  right: clamp(20px, 2.0833333333vw, 80px);
+  position: fixed;
+  background: #FCEE03;
+  border: 2px solid #FCEE03;
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0px 0px 63px 14px rgba(252, 238, 3, 0.45);
+  justify-content: center;
+  color: #00346E;
+  font-size: clamp(16px, 1.6666666667vw, 64px);
+  transform: translate(-50%, -50%);
+  transition: 0.3s all;
+}
+* html .main-screen .phone-circle:hover, * body .main-screen .phone-circle:hover {
+  background: #EADF02;
+}
+
+@media screen and (max-width: 448px) {
+  .main-screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+  }
+  .main-screen .arrow-blue {
+    display: none !important;
+  }
+  .main-screen .separator {
+    display: none;
+  }
+  .main-screen .container {
+    width: 86.4583333333%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    display: none !important;
+  }
+  .main-screen .container .proto-photo {
+    display: none;
+  }
+  .main-screen .container .proto-photo-phone {
+    width: auto;
+    height: auto;
+    margin-top: clamp(-100px, -46.7289719626vw, -400px);
+    display: flex !important;
+  }
+  .main-screen .container .main-content .main-heading, .main-screen .container .main-content .kz-main-heading {
+    width: clamp(188.5px, 88.0841121495vw, 754px) !important;
+    height: clamp(118px, 55.1401869159vw, 472px) !important;
+    margin: auto;
+    font-size: clamp(21.5px, 10.046728972vw, 86px) !important;
+    text-align: center !important;
+  }
+  .main-screen .container .main-content .description, .main-screen .container .main-content .kz-description {
+    width: clamp(176px, 82.2429906542vw, 704px) !important;
+    height: auto !important;
+    text-align: center;
+    margin: auto;
+    font-weight: 300;
+    font-size: clamp(9px, 4.2056074766vw, 36px);
+    margin-top: clamp(8px, 3.738317757vw, 32px);
+  }
+  .main-screen .container .main-content .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: clamp(145px, 74.358974359vw, 580px) !important;
+  }
+  .main-screen .container .main-content .buttons .main-button, .main-screen .container .main-content .buttons .more-button, .main-screen .container .main-content .buttons .kz-main-button, .main-screen .container .main-content .buttons .kz-more-button {
+    width: clamp(178.5px, 83.4112149533vw, 714px) !important;
+    height: clamp(31.5px, 14.7196261682vw, 126px) !important;
+    font-size: clamp(10.5px, 4.9065420561vw, 42px);
+    margin: auto;
+    margin-top: clamp(-250px, 116.8224299065vw, -1000px) !important;
+  }
+  .main-screen .container .main-content .buttons .main-button {
+    height: clamp(34px, 15.8878504673vw, 136px) !important;
+  }
+  .main-screen .container-mobile {
+    width: 86.4583333333%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    display: flex !important;
+  }
+  .main-screen .container-mobile .useful-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .main-screen .container-mobile .useful-container .main-button, .main-screen .container-mobile .useful-container .kz-main-button {
+    width: clamp(178.5px, 83.4112149533vw, 714px) !important;
+    font-size: clamp(10.5px, 4.9065420561vw, 42px) !important;
+    height: clamp(34px, 15.8878504673vw, 136px) !important;
+    background-color: #FCEE03;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 52px;
+    justify-content: center;
+    margin-bottom: clamp(64px, 5.7142857143vw, 256px);
+    border: none;
+    color: #022B6B;
+    margin-top: clamp(22px, 2.2916666667vw, 88px);
+  }
+  .main-screen .container-mobile .useful-container .qualified-product, .main-screen .container-mobile .useful-container .kz-qualified-product {
+    width: clamp(350px, 36.4583333333vw, 1400px);
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(13px, 1.3541666667vw, 52px);
+    text-align: center;
+    color: white;
+    margin: auto;
+    margin-top: clamp(64px, 6.6666666667vw, 256px);
+    margin-bottom: clamp(32px, 3.3333333333vw, 128px);
+  }
+  .main-screen .container-mobile .useful-container .kz-qualified-product {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(12px, 5.7971014493vw, 48px);
+  }
+  .main-screen .container-mobile .useful-container .useful-heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: clamp(32px, 14.953271028vw, 128px) !important;
+  }
+  .main-screen .container-mobile .useful-container .useful-heading-container .useful-heading, .main-screen .container-mobile .useful-container .useful-heading-container .kz-useful-headings {
+    text-align: center;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+    text-transform: uppercase !important;
+    color: white !important;
+  }
+  .main-screen .container-mobile .useful-container .useful-heading-container .best-hormone, .main-screen .container-mobile .useful-container .useful-heading-container .kz-best-hormone {
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 600;
+    color: #FCEE03;
+    margin-left: 0px !important;
+    font-size: clamp(11.5px, 5.3738317757vw, 46px) !important;
+  }
+  .main-screen .container-mobile .useful-container .useful-heading-container .kz-best-hormone {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(11px, 5.3140096618vw, 44px) !important;
+  }
+  .main-screen .container-mobile .useful-container .useful-heading-container .best-hormone-white, .main-screen .container-mobile .useful-container .useful-heading-container .kz-best-hormone-white {
+    font-size: clamp(8.5px, 3.9719626168vw, 34px) !important;
+    text-align: center !important;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 600;
+    font-size: clamp(13px, 1.3541666667vw, 52px);
+    color: white;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+  }
+  .main-screen .container-mobile .useful-container .useful-heading-container .kz-best-hormone-white {
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(11.5px, 5.5555555556vw, 46px) !important;
+  }
+  .main-screen .container-mobile .useful-container .useful-heading-container .separator {
+    width: clamp(295px, 30.7291666667vw, 1180px);
+    height: 1px;
+    background-color: #EDE9D0;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+  }
+  .main-screen .container-mobile .useful-container .cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: clamp(25px, 11.6822429907vw, 100px) !important;
+  }
+  .main-screen .container-mobile .useful-container .cards .card-one-li {
+    display: flex !important;
+    align-items: center !important;
+    flex-direction: row !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+  }
+  .main-screen .container-mobile .useful-container .cards .card-one-li .muscle-up-icon, .main-screen .container-mobile .useful-container .cards .card-one-li .lightning-icon, .main-screen .container-mobile .useful-container .cards .card-one-li .protection-icon, .main-screen .container-mobile .useful-container .cards .card-one-li .anti-pills-icon, .main-screen .container-mobile .useful-container .cards .card-one-li .delivery-icon {
+    width: clamp(53.5px, 25vw, 214px) !important;
+    height: clamp(30px, 14.0186915888vw, 120px) !important;
+  }
+  .main-screen .container-mobile .useful-container .cards .card-one-li .paragraph, .main-screen .container-mobile .useful-container .cards .card-one-li .kz-paragraph {
+    font-size: clamp(7px, 3.2710280374vw, 28px) !important;
+    width: clamp(125px, 58.4112149533vw, 500px) !important;
+    text-align: left !important;
+    font-family: "Unbounded";
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+    margin-top: 0px !important;
+    margin-left: clamp(8px, 3.738317757vw, 32px) !important;
+  }
+  .main-screen .container-mobile .useful-container .cards .card-one-li .kz-paragraph {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(8px, 4.1062801932vw, 34px) !important;
+  }
+  .main-screen .container-mobile .useful-container .shop-button {
+    width: clamp(173.5px, 81.0747663551vw, 694px) !important;
+    height: clamp(32px, 14.953271028vw, 128px) !important;
+    border: 4px solid #F4F5F8 !important;
+    font-size: clamp(14px, 6.5420560748vw, 56px) !important;
+  }
+  .main-screen .phone-circle {
+    width: 48px !important;
+    height: 48px !important;
+    bottom: 20px !important;
+    right: 16px !important;
+    position: fixed;
+    background: #FCEE03;
+    border: 2px solid #FCEE03;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 63px 14px rgba(252, 238, 3, 0.45);
+    justify-content: center;
+    color: #00346E;
+    font-size: 22px !important;
+    z-index: 1000;
+    transform: translate(-50%, -50%);
+    transition: 0.3s all;
+  }
+  .main-screen .phone-circle:hover {
+    background: #EADF02;
+  }
+}/*# sourceMappingURL=main_screen.css.map */

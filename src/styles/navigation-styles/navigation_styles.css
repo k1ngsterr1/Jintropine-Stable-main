@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* body {
+  overflow-x: hidden !important;
+}
+* body .nav-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+}
+* body .nav-container .nav {
+  width: 86.4583333333%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+* body .nav-container .nav .whats-app-link, * body .nav-container .nav .phone-number, * body .nav-container .nav .email, * body .nav-container .nav .form-button {
+  text-decoration: none;
+  font-size: clamp(10.5px, 1.09375vw, 42px);
+  font-weight: 600;
+  color: #FFF200;
+}
+* body .nav-container .nav .whats-app-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* body .nav-container .nav .whats-app-link .whats-app-icon {
+  margin-right: clamp(4px, 0.4166666667vw, 16px);
+  font-size: clamp(12px, 1.25vw, 48px);
+}
+* body .nav-container .nav .form-button {
+  width: clamp(135px, 14.0625vw, 540px);
+  height: clamp(32px, 3.3333333333vw, 128px);
+  display: flex;
+  align-items: center;
+  font-weight: 800;
+  border-radius: 100px;
+  justify-content: center;
+  background-color: #FFF200;
+  color: #00346E;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+* body .nav-container .nav .logo {
+  width: clamp(119px, 12.3958333333vw, 476px);
+  height: clamp(20.5px, 2.1354166667vw, 82px);
+}
+* body .nav-container .nav .navigation {
+  display: flex;
+  align-items: center;
+}
+* body .nav-container .nav .navigation .link-main, * body .nav-container .nav .navigation .link-verification {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: clamp(9px, 0.9375vw, 36px);
+  color: #00346E;
+  text-decoration: none;
+}
+* body .nav-container .nav .navigation .link-main:hover, * body .nav-container .nav .navigation .link-verification:hover {
+  color: #008AA2;
+}
+* body .nav-container .nav .navigation .link-verification {
+  margin-right: clamp(16px, 1.6666666667vw, 64px);
+}
+* body .nav-container .nav .navigation .link-main {
+  margin-right: clamp(16px, 1.6666666667vw, 64px);
+}
+* body .nav-container .nav .navigation .contact-button {
+  width: clamp(135px, 14.0625vw, 540px);
+  height: clamp(24.5px, 2.5520833333vw, 98px);
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 500;
+  color: white;
+  background-color: #588EF7;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 71px;
+  font-size: clamp(12.5px, 1.3020833333vw, 50px);
+  border: none;
+  transition: 0.3s all;
+}
+* body .nav-container .nav .navigation .contact-button:hover {
+  background-color: #2B6FF5;
+}
+* body .nav-container .nav .navigation .languages-container {
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: clamp(9px, 0.9375vw, 36px);
+  color: #00346E;
+  margin: 0;
+  margin-right: clamp(16px, 1.6666666667vw, 64px);
+  background: transparent;
+  display: flex;
+}
+* body .nav-container .nav .navigation .languages-container:hover {
+  color: #008AA2;
+}
+* body .nav-container .nav .navigation .languages-container .arrow-down {
+  margin-left: clamp(4px, 0.4166666667vw, 16px);
+}
+* body .nav-container .nav .navigation .languages-container .fi-ru, * body .nav-container .nav .navigation .languages-container .fi-us, * body .nav-container .nav .navigation .languages-container .fi-kz {
+  transition: 0.3s all;
+}
+* body .nav-container .nav .navigation .languages-container .fi-ru:hover, * body .nav-container .nav .navigation .languages-container .fi-us:hover, * body .nav-container .nav .navigation .languages-container .fi-kz:hover {
+  border: 2px solid #00346E;
+}
+* body .nav-container .nav .navigation .languages-container .fi-ru, * body .nav-container .nav .navigation .languages-container .fi-us {
+  margin-right: clamp(6px, 0.625vw, 24px);
+}
+* body .nav-container .nav-mob {
+  display: none;
+}
+* body .nav-container .nav-mob .for-burger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 448px) {
+  body .nav-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  body .nav-container .nav {
+    width: 86.4583333333%;
+    height: auto;
+    margin: auto;
+    display: none !important;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .nav-container .nav-mob {
+    width: 85.5140186916%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .nav-container .nav-mob .mobile-logo {
+    width: auto;
+    height: auto;
+  }
+  body .nav-container .nav-mob .for-burger-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  body .nav-container .nav-mob .for-burger-menu .bars {
+    font-size: clamp(20px, 9.3457943925vw, 80px);
+    cursor: pointer;
+    color: #FFF200;
+  }
+  body .nav-container .nav-mob .for-burger-menu .cross-icon {
+    font-size: clamp(20px, 9.3457943925vw, 80px);
+    cursor: pointer;
+    color: #FFF200;
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile {
+    width: 100% !important;
+    height: auto !important;
+    background-color: #022B6B !important;
+    top: clamp(34.5px, 16.1214953271vw, 138px);
+    box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.1) !important;
+    display: flex !important;
+    z-index: 10 !important;
+    flex-direction: column !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    top: 90px !important;
+    text-align: center !important;
+    position: absolute !important;
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .main-link-mobile, body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .verification-mobile-link, body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .contact-with-us-mob, body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .indication-mob, body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .available-mob, body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .document-mob, body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .realisation-conditions-mob {
+    font-size: clamp(10px, 4.6728971963vw, 40px);
+    color: #FFF200;
+    text-decoration: none;
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .indication-mob {
+    margin-top: clamp(14.5px, 6.7757009346vw, 58px) !important;
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .available-mob, body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .document-mob, body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .realisation-conditions-mob {
+    margin-top: clamp(14.5px, 6.7757009346vw, 58px) !important;
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .main-link-mobile {
+    margin-top: clamp(14.5px, 6.7757009346vw, 58px) !important;
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .verification-mobile-link {
+    margin-top: clamp(14.5px, 6.7757009346vw, 58px) !important;
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .contact-with-us-mob {
+    margin-top: clamp(14.5px, 6.7757009346vw, 58px) !important;
+    margin-bottom: clamp(14.5px, 6.7757009346vw, 58px) !important;
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .language-buttons {
+    margin-bottom: clamp(14.5px, 6.7757009346vw, 58px) !important;
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .language-buttons .fi-ru, body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .language-buttons .fi-kz, body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .language-buttons .fi-us {
+    font-size: clamp(12.5px, 5.8411214953vw, 50px);
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .language-buttons .fi-kz {
+    margin-left: clamp(16px, 1.6666666667vw, 64px);
+  }
+  body .nav-container .nav-mob .for-burger-menu .nav-links-mobile .language-buttons .fi-ru {
+    margin-right: clamp(16px, 1.6666666667vw, 64px);
+  }
+}/*# sourceMappingURL=navigation_styles.css.map */

@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* body button, * body a {
+  cursor: pointer;
+  transition: 0.3s all;
+}
+* body .about-jin {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp(16px, 1.6666666667vw, 64px);
+  background-color: white;
+}
+* body .about-jin .about-arrow {
+  position: absolute;
+  width: clamp(143px, 14.8958333333vw, 572px);
+  height: clamp(108px, 11.25vw, 432px);
+  left: clamp(375px, 39.0625vw, 1500px);
+  top: clamp(700px, 72.9166666667vw, 2800px);
+}
+* body .about-jin .girl-about-phone {
+  display: none;
+}
+* body .about-jin .about-jin-container {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+* body .about-jin .about-jin-container .about-proto {
+  width: clamp(297.5px, 30.9895833333vw, 1190px);
+  height: clamp(447.5px, 46.6145833333vw, 1790px);
+  position: sticky;
+  margin-left: clamp(-50px, -5.2083333333vw, -200px);
+}
+* body .about-jin .about-jin-container .about-heading-container {
+  margin: auto;
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+* body .about-jin .about-jin-container .about-heading-container .about-heading, * body .about-jin .about-jin-container .about-heading-container .kz-about-heading {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(19px, 1.9791666667vw, 76px);
+  text-transform: uppercase;
+  color: #00346E;
+}
+* body .about-jin .about-jin-container .about-heading-container .kz-about-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 2.5vw, 96px);
+}
+* body .about-jin .about-jin-container .about-heading-container .separator {
+  width: clamp(174.5px, 18.1770833333vw, 698px);
+  height: 1px;
+  margin-top: clamp(8px, 0.8333333333vw, 32px);
+  background-color: #00346E;
+}
+* body .about-jin .about-jin-container .about-content {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+}
+* body .about-jin .about-jin-container .about-content .about-paragraph, * body .about-jin .about-jin-container .about-content .kz-about-paragraph {
+  width: clamp(381.5px, 39.7395833333vw, 1526px);
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 300;
+  line-height: 151%;
+  font-size: clamp(13px, 1.3541666667vw, 52px);
+  color: #1e1e1e;
+}
+* body .about-jin .about-jin-container .about-content .more-info, * body .about-jin .about-jin-container .about-content .kz-more-info {
+  width: clamp(212.5px, 22.1354166667vw, 850px);
+  height: clamp(32px, 3.3333333333vw, 128px);
+  background-color: #022B6B;
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 600;
+  font-size: clamp(11px, 1.1458333333vw, 44px);
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(32px, 3.3333333333vw, 128px);
+  color: #FFF200;
+  border-radius: 71px;
+}
+* body .about-jin .about-jin-container .about-content .more-info:hover, * body .about-jin .about-jin-container .about-content .kz-more-info:hover {
+  background-color: #02245A;
+}
+* body .about-jin .about-jin-container .about-content .kz-more-info {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(14px, 1.4583333333vw, 56px);
+}
+* body .about-jin .about-jin-container .about-content .kz-about-paragraph {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(14.5px, 1.5104166667vw, 58px);
+}
+
+@media screen and (max-width: 448px) {
+  .about-jin {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: clamp(32px, 3.3333333333vw, 128px);
+    background-color: #F4F5F8;
+  }
+  .about-jin .girl-about-phone {
+    width: clamp(196.5px, 94.9275362319vw, 786px);
+    height: clamp(310px, 149.7584541063vw, 1240px);
+    margin-left: clamp(10px, 4.6728971963vw, 40px);
+    display: flex !important;
+  }
+  .about-jin .about-arrow {
+    display: none;
+  }
+  .about-jin .about-jin-container {
+    width: 86.4583333333%;
+    height: auto;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+    margin: auto !important;
+  }
+  .about-jin .about-jin-container .about-proto {
+    display: none !important;
+  }
+  .about-jin .about-heading-container {
+    margin: auto;
+    margin-top: clamp(32px, 14.953271028vw, 128px) !important;
+    display: flex;
+    align-items: center !important;
+    flex-direction: column;
+  }
+  .about-jin .about-heading-container .about-heading, .about-jin .about-heading-container .kz-about-heading {
+    width: clamp(50px, 5.2083333333vw, 200px) !important;
+    text-align: center !important;
+    margin: auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: clamp(17px, 7.9439252336vw, 68px) !important;
+    text-align: center !important;
+  }
+  .about-jin .about-heading-container .separator {
+    width: clamp(145.5px, 67.9906542056vw, 582px);
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+  }
+  .about-jin .about-content {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center;
+  }
+  .about-jin .about-content .about-paragraph, .about-jin .about-content .kz-about-paragraph {
+    width: clamp(180px, 84.1121495327vw, 720px) !important;
+    height: auto;
+    font-family: "Unbounded" !important;
+    font-style: normal !important;
+    font-weight: 500;
+    font-size: clamp(10px, 4.6728971963vw, 40px) !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    font-weight: 500 !important;
+    margin: auto;
+    color: #022B6B !important;
+    text-align: center;
+  }
+  .about-jin .about-content .kz-about-paragraph {
+    font-family: "Raleway" !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    font-size: clamp(10px, 4.6728971963vw, 40px) !important;
+  }
+  .about-jin .more-info, .about-jin .kz-more-info {
+    width: clamp(178.5px, 83.4112149533vw, 714px) !important;
+    height: clamp(34px, 15.8878504673vw, 136px) !important;
+    margin-top: clamp(16px, 7.476635514vw, 64px) !important;
+    margin-bottom: clamp(32px, 14.953271028vw, 128px) !important;
+    font-size: clamp(9px, 4.2056074766vw, 36px) !important;
+  }
+  .about-jin .kz-more-info {
+    font-size: clamp(12px, 5.7971014493vw, 48px) !important;
+    font-family: "Roboto Condensed";
+    font-style: normal;
+    font-weight: 700;
+  }
+}/*# sourceMappingURL=about_jin_styles.css.map */
