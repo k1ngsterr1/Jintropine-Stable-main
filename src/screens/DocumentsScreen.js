@@ -42,7 +42,6 @@ const DocumentsScreen = () => {
               alt="document"
               onClick={() => window.open(document2, "_blank")}
             ></img>
-            {/* <img className="document-photo" src={document}></img> */}
           </div>
         </div>
       </div>

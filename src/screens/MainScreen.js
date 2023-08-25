@@ -136,7 +136,7 @@ const MainScreen = () => {
       <div className="container-mobile">
         <div className="useful-container">
           <div className="useful-heading-container">
-            <h2 className="useful-heading">{t("useful-heading.key")}</h2>
+            <h2 className="useful-heading">{t("main-heading.key")}</h2>
             <p
               className={
                 i18n.resolvedLanguage == "kz"
