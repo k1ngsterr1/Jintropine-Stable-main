@@ -65,7 +65,7 @@ const InstockScreen = () => {
               </p>
               <a
                 className="stock-button"
-                href="https://wa.me/77772886600"
+                href="https://api.whatsapp.com/send?phone=77772886600&text=Здравствуйте! Хочу узнать подробнее про Джинтропин"
                 target="_blank"
               >
                 {t("show-drug.key")}

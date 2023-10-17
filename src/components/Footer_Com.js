@@ -129,7 +129,7 @@ const Footer_Com = () => {
             <span className="text">Контакты:</span>{" "}
             <a
               className="link"
-              href="https://api.whatsapp.com/send/?phone=77772886600&text&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send?phone=77772886600&text=Здравствуйте! Хочу узнать подробнее про Джинтропин"
             >
               <IoLogoWhatsapp className="icon"></IoLogoWhatsapp>
               +7 777 288 6600

@@ -113,7 +113,7 @@ const MainScreen = () => {
               className={
                 i18n.resolvedLanguage == "kz" ? "kz-main-button" : "main-button"
               }
-              href="https://wa.me/77772886600"
+              href="https://api.whatsapp.com/send?phone=77772886600&text=Здравствуйте! Хочу узнать подробнее про Джинтропин"
               target="_blank"
             >
               {t("form-button-two.key")}{" "}
@@ -220,7 +220,7 @@ const MainScreen = () => {
             </p>
             <a
               className="main-button"
-              href="https://wa.me/77772886600"
+              href="https://wa.me/message/R6FI7B4Q4BZSJ1"
               target="_blank"
             >
               {t("show-drug.key")}

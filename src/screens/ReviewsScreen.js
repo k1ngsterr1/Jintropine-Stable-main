@@ -33,11 +33,11 @@ const ReviewsScreen = () => {
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={0}
           slidesPerView={3}
-          navigation={false}
+          navigation={true}
           centeredSlides={true}
           centerInsufficientSlides={true}
           centeredSlidesBounds={true}
-          pagination={{ clickable: true }}
+          pagination={false}
           //   scrollbar={{ draggable: true }}
           className="carousel"
           onSlideChange={() => console.log("slide change")}
