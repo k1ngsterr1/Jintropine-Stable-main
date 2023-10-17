@@ -1,0 +1,78 @@
+$red: #588EF7
+$light_red: #EEA6A1
+$main_cream: #F4F5F8
+$main_blue: #00346E
+$selected_blue: #008AA2
+$background: #FFFF
+$button_hover: #2B6FF5
+
+// Margins
+$eightclamp: clamp(4px,0.4166666666666667vw,16px)
+$sixteenclamp: clamp(8px,0.8333333333333334vw,32px)
+$twentyclamp: clamp(10px,1.0416666666666667vw,40px)
+
+$thirtytwoclamp: clamp(16px,1.6666666666666667vw,64px)
+$sixtyfourclamp: clamp(32px,3.3333333333333335vw,128px)
+$onetwoeightclamp: clamp(64px,6.666666666666667vw,256px)
+$twofivesixclamp: clamp(128px,13.333333333333334vw,512px)
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap')
+
+*
+    margin: 0
+    padding: 0
+
+    body
+        width: 100%
+        height: auto
+        font-family: 'Raleway', sans-serif
+        font-display: fallback
+        overflow-x: hidden !important
+
+        .reviews-jintropine-screen
+            width: 100%
+            height: auto
+            margin: auto
+            background-color: #022B6B
+            flex-direction: column
+
+            .container
+                width: 86.45833333333333%
+                height: auto
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                margin: auto
+                justify-content: space-between
+
+                .reviews-heading, .kz-reviews-heading
+                    font-family: 'Unbounded'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: clamp(19px, 1.9791666666666667vw,76px)
+                    text-transform: uppercase
+                    color: #FFF200
+
+                .kz-reviews-heading
+                    font-family: 'Roboto Condensed'
+                    font-style: normal
+                    font-weight: 700
+                    font-size: clamp(24px,2.5vw,96px)
+
+                .carousel
+                    width: 100%
+                    height: auto
+                    display: flex
+                    flex-direction: row
+                    justify-content: center
+                    align-items: center
+                    margin: auto
+                    margin-top: $onetwoeightclamp
+
+                    .image
+                        width: clamp(200px,20.833333333333332vw,800px)
+                        height: clamp(360px,37.5vw,1440px)
+                        border-radius: 10px

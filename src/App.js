@@ -24,6 +24,7 @@ import VideoScreen from "./screens/VideoScreen";
 import RealisationScreen from "./screens/RealisationScreen";
 import DocumentsScreen from "./screens/DocumentsScreen";
 import ContactScreen2 from "./screens/ContactScreen2";
+import ReviewsScreen from "./screens/ReviewsScreen";
 
 const App = () => {
   const [locale, setLocale] = useState(i18n.language);
@@ -32,6 +33,7 @@ const App = () => {
       <MainScreen />
       <AboutJinScreen />
       <UsefulScreen />
+      <ReviewsScreen />
       <ContactScreen2 />
       <DisclaimerScreen />
       <IndicationsScreen />

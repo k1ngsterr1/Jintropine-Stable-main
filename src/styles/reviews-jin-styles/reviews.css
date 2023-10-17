@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+* body {
+  width: 100%;
+  height: auto;
+  font-family: "Raleway", sans-serif;
+  font-display: fallback;
+  overflow-x: hidden !important;
+}
+* body .reviews-jintropine-screen {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  background-color: #022B6B;
+  flex-direction: column;
+}
+* body .reviews-jintropine-screen .container {
+  width: 86.4583333333%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+* body .reviews-jintropine-screen .container .reviews-heading, * body .reviews-jintropine-screen .container .kz-reviews-heading {
+  font-family: "Unbounded";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(19px, 1.9791666667vw, 76px);
+  text-transform: uppercase;
+  color: #FFF200;
+}
+* body .reviews-jintropine-screen .container .kz-reviews-heading {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: clamp(24px, 2.5vw, 96px);
+}
+* body .reviews-jintropine-screen .container .carousel {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: clamp(64px, 6.6666666667vw, 256px);
+}
+* body .reviews-jintropine-screen .container .carousel .image {
+  width: clamp(200px, 20.8333333333vw, 800px);
+  height: clamp(360px, 37.5vw, 1440px);
+  border-radius: 10px;
+}/*# sourceMappingURL=reviews.css.map */
