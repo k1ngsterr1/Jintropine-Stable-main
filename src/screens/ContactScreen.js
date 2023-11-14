@@ -54,10 +54,29 @@ const ContactScreen = () => {
         "bdkcSbsbst0EBRZfJ"
       )
       .then((res) => {
-        // console.log("SUCCESS");
+        console.log("Email sent successfully", res);
+        postToExternalApi(e.target);
       })
       .catch((err) => console.log(err));
   }
+
+  const postToExternalApi = (formElement) => {
+    const formData = new FormData(formElement);
+
+    const apiEndpoint =
+      "https://amo-widgets.com/amo_projects_api_v4/jintropine/forms/jintropine.php";
+    fetch(apiEndpoint, {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Data posted successfully:", data);
+      })
+      .catch((error) => {
+        console.error("Failed to post data:", error);
+      });
+  };
 
   return (
     <div className="contacts" id="contact-screen">
