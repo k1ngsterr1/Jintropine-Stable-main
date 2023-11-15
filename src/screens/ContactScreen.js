@@ -91,10 +91,9 @@ const ContactScreen = () => {
     });
 
     // Add the special 'AmoCRM' key to the JSON object
-    jsonObject["AmoCRM"] = "Send For AmoCRM"; // Set your special value here
+    jsonObject["Type:"] = "contact_with_us"; // Set your special value here
 
     var json = JSON.stringify(jsonObject);
-    console.log("My Data:", json);
 
     xhr.send(json); // Send JSON data
   }

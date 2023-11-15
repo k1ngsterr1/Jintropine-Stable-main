@@ -89,7 +89,7 @@ const ContactScreen2 = () => {
     });
 
     // Add the special 'AmoCRM' key to the JSON object
-    jsonObject["Type:"] = "Связаться с нами"; // Set your special value here
+    jsonObject["Type:"] = "contact_with_us"; // Set your special value here
 
     var json = JSON.stringify(jsonObject);
 

@@ -109,7 +109,7 @@ const MainScreen = () => {
     });
 
     // Add the special 'AmoCRM' key to the JSON object
-    jsonObject["Type:"] = "Обратный звонок"; // Set your special value here
+    jsonObject["Type:"] = "call_me_back"; // Set your special value here
 
     var json = JSON.stringify(jsonObject);
 
