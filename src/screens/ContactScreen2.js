@@ -55,35 +55,47 @@ const ContactScreen2 = () => {
       )
       .then((res) => {
         console.log("Email sent successfully", res);
-        postToExternalApi(e.target);
       })
       .catch((err) => console.log(err));
+    sendFormDataAjax(e.target);
   }
 
-  const postToExternalApi = (formElement) => {
-    const formData = new FormData(formElement);
-    const apiEndpoint =
-      "https://amo-widgets.com/amo_projects_api_v4/jintropine/forms/jintropine.php";
+  function sendFormDataAjax(formElement) {
+    var xhr = new XMLHttpRequest();
+    xhr.open(
+      "POST",
+      "https://amo-widgets.com/amo_projects_api_v4/jintropine/forms/jintropine.php",
+      true
+    );
+    xhr.setRequestHeader("Content-Type", "application/json"); // Set the content type to JSON
 
-    fetch(apiEndpoint, {
-      method: "POST",
-      body: formData,
-    })
-      .then((response) => {
-        if (
-          response.headers.get("content-type")?.includes("application/json")
-        ) {
-          return response.json();
-        }
-        throw new Error("Response not JSON");
-      })
-      .then((data) => {
-        console.log("Data posted successfully:", data);
-      })
-      .catch((error) => {
-        console.error("Failed to post data:", error);
-      });
-  };
+    xhr.onload = function () {
+      if (xhr.status === 200) {
+        console.log("Form data sent successfully", xhr.responseText);
+      } else {
+        console.error("Error sending form data", xhr.status, xhr.statusText);
+      }
+    };
+
+    xhr.onerror = function () {
+      console.error("Network error occurred during the form data send.");
+    };
+
+    // Convert form data to a JSON object
+    var formData = new FormData(formElement);
+    var jsonObject = {};
+    formData.forEach(function (value, key) {
+      jsonObject[key] = value;
+    });
+
+    // Add the special 'AmoCRM' key to the JSON object
+    jsonObject["AmoCRM"] = "Send For AmoCRM"; // Set your special value here
+
+    var json = JSON.stringify(jsonObject);
+    console.log("My Data:", json);
+
+    xhr.send(json); // Send JSON data
+  }
 
   return (
     <div className="contacts">
