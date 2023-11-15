@@ -77,7 +77,6 @@ const MainScreen = () => {
       )
       .then((res) => {})
       .catch((err) => console.log(err));
-    sendFormDataAjax(e.target);
   }
 
   function sendFormDataAjax(formElement) {
@@ -118,7 +117,7 @@ const MainScreen = () => {
 
   return (
     <main className="main-screen" id="main-screen">
-      <Navigation></Navigation>
+      <Navigation />
       <div className="container">
         <div className="main-content">
           <h1
@@ -263,7 +262,7 @@ const MainScreen = () => {
           </div>
         </div>
       </div>
-      <img src={arrow} className="arrow-blue" alt="arrow"></img>
+      <img src={arrow} className="arrow-blue" alt="arrow" />
       <Popup open={open} closeOnDocumentClick onClose={closeModal} modal nested>
         <div className="number-modal">
           <h4
@@ -296,7 +295,10 @@ const MainScreen = () => {
               placeholder="+7 777 77 77"
               required={true}
             ></input>
-            <button className="send-number-button">
+            <button
+              className="send-number-button"
+              onMouseUp={() => sendFormDataAjax}
+            >
               {t("order-call.key")}
             </button>
             <p
