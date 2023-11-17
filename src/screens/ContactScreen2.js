@@ -57,11 +57,24 @@ const ContactScreen2 = () => {
         console.log("Email sent successfully", res);
       })
       .catch((err) => console.log(err));
-    sendFormDataAjax(e.target);
+    // sendFormDataAjax(e.target);
   }
 
   function sendFormDataAjax(formElement) {
     var xhr = new XMLHttpRequest();
+
+    // Convert form data to a JSON object
+    var formData = new FormData(formElement);
+    var jsonObject = {};
+    formData.forEach(function (value, key) {
+      jsonObject[key] = value;
+    });
+
+    // Add the special 'AmoCRM' key to the JSON object
+    jsonObject["Type:"] = "contact_with_us"; // Set your special value here
+
+    var json = JSON.stringify(jsonObject);
+
     xhr.open(
       "POST",
       "https://amo-widgets.com/amo_projects_api_v4/jintropine/forms/jintropine.php",
@@ -80,18 +93,6 @@ const ContactScreen2 = () => {
     xhr.onerror = function () {
       console.error("Network error occurred during the form data send.");
     };
-
-    // Convert form data to a JSON object
-    var formData = new FormData(formElement);
-    var jsonObject = {};
-    formData.forEach(function (value, key) {
-      jsonObject[key] = value;
-    });
-
-    // Add the special 'AmoCRM' key to the JSON object
-    jsonObject["Type:"] = "contact_with_us"; // Set your special value here
-
-    var json = JSON.stringify(jsonObject);
 
     xhr.send(json); // Send JSON data
   }
@@ -171,7 +172,11 @@ const ContactScreen2 = () => {
               placeholder="E-mail"
               required={true}
             ></input>
-            <button className="submit-button" value="Send">
+            <button
+              className="submit-button"
+              value="Send"
+              onMouseUp={() => sendFormDataAjax}
+            >
               {t("form-button-two.key")}
             </button>
             <Popup
