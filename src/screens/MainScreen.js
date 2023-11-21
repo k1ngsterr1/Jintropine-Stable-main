@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 
 // Components
 import Navigation from "../components/Navigation_Com";
@@ -75,32 +76,14 @@ const MainScreen = () => {
         e.target,
         "bdkcSbsbst0EBRZfJ"
       )
-      .then((res) => {})
+      .then((res) => {
+        console.log("Email sent successfully", res);
+      })
       .catch((err) => console.log(err));
+    sendFormDataAjax(e.target);
   }
 
   function sendFormDataAjax(formElement) {
-    var xhr = new XMLHttpRequest();
-    xhr.open(
-      "POST",
-      "https://amo-widgets.com/amo_projects_api_v4/jintropine/forms/jintropine.php",
-      true
-    );
-    xhr.setRequestHeader("Content-Type", "application/json"); // Set the content type to JSON
-
-    xhr.onload = function () {
-      if (xhr.status === 200) {
-        console.log("Form data sent successfully", xhr.responseText);
-      } else {
-        console.error("Error sending form data", xhr.status, xhr.statusText);
-      }
-    };
-
-    xhr.onerror = function () {
-      console.error("Network error occurred during the form data send.");
-    };
-
-    // Convert form data to a JSON object
     var formData = new FormData(formElement);
     var jsonObject = {};
     formData.forEach(function (value, key) {
@@ -110,9 +93,30 @@ const MainScreen = () => {
     // Add the special 'AmoCRM' key to the JSON object
     jsonObject["Type:"] = "call_me_back"; // Set your special value here
 
-    var json = JSON.stringify(jsonObject);
+    console.log(formData, jsonObject, formElement);
 
-    xhr.send(json); // Send JSON data
+    // Using Axios for the POST request
+    axios
+      .post(
+        "https://amo-widgets.com/amo_projects_api_v4/jintropine/forms/jintropine.php",
+        jsonObject,
+        {
+          headers: {
+            "Content-Type": "application/json", // Set the content type to JSON
+          },
+        }
+      )
+      .then(function (response) {
+        console.log(
+          "Form data sent successfully",
+          response,
+          formData,
+          jsonObject
+        );
+      })
+      .catch(function (error) {
+        console.error("Error sending form data", error);
+      });
   }
 
   return (
@@ -297,7 +301,7 @@ const MainScreen = () => {
             ></input>
             <button
               className="send-number-button"
-              onMouseUp={() => sendFormDataAjax}
+              // onClick={}
             >
               {t("order-call.key")}
             </button>

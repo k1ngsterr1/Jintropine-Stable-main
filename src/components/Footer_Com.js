@@ -1,31 +1,23 @@
 import React from "react";
-import { useTranslation, Trans } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 // Styles
 import "../styles/footer-styles/footer_styles.css";
 import logo from "../assets/jintropin-original-logo.svg";
-
-// Popup
-import Popup from "reactjs-popup";
+import spark_logo from "../assets/spark_logo.svg";
 
 // Icons
 import { FaInstagram, FaSortUp } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
-import { FaPhone } from "react-icons/fa";
-import { RxEnvelopeClosed } from "react-icons/rx";
 import { Link } from "react-scroll";
-
-// Hooks
-import { useState } from "react";
-import { useRef } from "react";
-
-// Email JS
-import emailjs from "@emailjs/browser";
-
 import { IoLogoWhatsapp } from "react-icons/io";
 import { IoMdCall } from "react-icons/io";
 
 const Footer_Com = () => {
+  function SparkRedirect() {
+    window.open("https://sparkstudio.kz/", "_blank");
+  }
+
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (language) => {
@@ -144,7 +136,6 @@ const Footer_Com = () => {
           </div>
         </nav>
         <div className="footer-contacts">
-          {/* <h4 className="contacts-header">{t("contacts-header.key")}</h4> */}
           <div className="contacts-container">
             <a
               href="https://www.instagram.com/jintropine_shop/"
@@ -163,6 +154,12 @@ const Footer_Com = () => {
           </div>
         </div>
       </div>
+      <img
+        className="spark-logo"
+        src={spark_logo}
+        onClick={SparkRedirect}
+        alt="Spark Studio"
+      />
     </footer>
   );
 };

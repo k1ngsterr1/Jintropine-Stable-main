@@ -94,6 +94,9 @@
 * body .footer {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #0B357A;
 }
 * body .footer .footer-content {
@@ -276,6 +279,11 @@
   padding-top: clamp(5px, 0.5208333333vw, 20px);
   padding-left: clamp(5px, 0.5208333333vw, 20px);
 }
+* body .spark-logo {
+  width: 150px;
+  margin: auto;
+  margin-bottom: clamp(16px, 1.66656vw, 64px);
+}
 
 @media screen and (max-width: 448px) {
   .number-modal {
@@ -443,6 +451,11 @@
     color: white;
     font-size: clamp(17px, 7.9439252336vw, 68px) !important;
     margin-left: clamp(16px, 7.476635514vw, 64px) !important;
+  }
+  .footer .footer-content .footer-contacts-mob .spark-logo {
+    widht: clamp(50px, 23.364vw, 200px);
+    height: clamp(25px, 11.682vw, 100px);
+    margin-top: clamp(16px, 7.47648vw, 64px);
   }
   .footer .footer-content .logo-mobile {
     display: flex !important;
