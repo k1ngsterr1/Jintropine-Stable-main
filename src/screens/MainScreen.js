@@ -59,7 +59,9 @@ const MainScreen = () => {
   const form = useRef();
 
   function handleClick() {
-    setOpen((o) => !o);
+    setTimeout(() => {
+      setOpen((o) => !o);
+    }, 2000);
   }
 
   function sendEmail(e) {

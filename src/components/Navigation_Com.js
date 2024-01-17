@@ -26,9 +26,11 @@ import { slide as Menu } from "react-burger-menu";
 import Hamburger_Menu from "./Hamburger_Menu";
 
 import { IoLogoWhatsapp } from "react-icons/io";
+import { useNavigate } from "react-router";
 
 const Navigation = () => {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -61,7 +63,12 @@ const Navigation = () => {
         <a className="email" href="mailto: sales@jintropine.com">
           sales@jintropine.com
         </a>
-        <Link className="form-button" to="contact-screen" smooth={true}>
+        <Link
+          className="form-button"
+          to="contact-screen"
+          smooth={true}
+          onClick={navigate("/")}
+        >
           Отправить заявку
         </Link>
         <Hamburger_Menu outerContainerId={"nav-container"}></Hamburger_Menu>

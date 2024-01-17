@@ -25,12 +25,24 @@ const MoreInfo = () => {
       <div className="more-info-container">
         <div className="paragraph-container">
           <p className="info-paragraph ">{t("info-paragraph-one.key")}</p>
-          <p className="info-paragraph section">{t("info-paragraph-two.key")}</p>
-          <p className="info-paragraph section">{t("info-paragraph-three.key")}</p>
-          <p className="info-paragraph section">{t("info-paragraph-four.key")}</p>
-          <p className="info-paragraph section">{t("info-paragraph-five.key")}</p>
-          <p className="info-paragraph section">{t("info-paragraph-six.key")}</p>
-          <p className="info-paragraph section">{t("info-paragraph-seven.key")}</p>
+          <p className="info-paragraph section">
+            {t("info-paragraph-two.key")}
+          </p>
+          <p className="info-paragraph section">
+            {t("info-paragraph-three.key")}
+          </p>
+          <p className="info-paragraph section">
+            {t("info-paragraph-four.key")}
+          </p>
+          <p className="info-paragraph section">
+            {t("info-paragraph-five.key")}
+          </p>
+          <p className="info-paragraph section">
+            {t("info-paragraph-six.key")}
+          </p>
+          <p className="info-paragraph section">
+            {t("info-paragraph-seven.key")}
+          </p>
 
           <div className="buttons-container">
             <button className="go-back-button" onClick={() => navigate("/")}>
@@ -38,7 +50,7 @@ const MoreInfo = () => {
             </button>
             <a
               className="main-button"
-              href="https://t.me/Jintropine_Bot"
+              href="https://api.whatsapp.com/send/?phone=77772886600&text&type=phone_number&app_absent=0"
               target="_blank"
             >
               {t("main-button.key")}{" "}
