@@ -61,7 +61,7 @@ const MainScreen = () => {
   function handleClick() {
     setTimeout(() => {
       setOpen((o) => !o);
-    }, 2000);
+    }, 100);
   }
 
   function sendEmail(e) {

@@ -67,7 +67,7 @@ const Navigation = () => {
           className="form-button"
           to="contact-screen"
           smooth={true}
-          onClick={navigate("/")}
+          onClick={() => navigate("/")}
         >
           Отправить заявку
         </Link>
